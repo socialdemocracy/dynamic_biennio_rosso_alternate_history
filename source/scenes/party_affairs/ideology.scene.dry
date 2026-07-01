@@ -16,7 +16,7 @@ The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> is torn bet
 - @class_struggle: <span style="color: [+ communist_colour +];">**Class struggle**</span> and preparing the proletariat for the revolution are our primary goals.
 - @centrist: The Center <span style="color: #9B0000;">Marxism</span> of Karl Kautsky remains the best way to resolve our internal contradictions.
 - @syndicalism: The <span style="color: [+ syndicalist_colour +];">**Syndicalism**</span> of De Ambris will best improve the lives of the proletariat.
-- @labour: We should work with the <span style="color: [+ labour_colour +];">**=trade unions**</span> to improve the lives of workers.
+- @labour: We should work with the <span style="color: [+ labour_colour +];">**trade unions**</span> to improve the lives of workers.
 - @reform: Following Eduard Bernstein & Filippo Turati, we should work for <span style="color: [+ reformist_colour +];">**ethical socialism**</span>, strengthen democracy, and expand the party's electorate.
 - @easy_discard
 - @cancel_advisor_action
