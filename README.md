@@ -1,6 +1,7 @@
-# Biennio Rosso: An Alternate History
+# Dynamic Biennio Rosso: An Alternate History
 
 ## Mod of Autumn Chen's [Social Democracy: An Alternate History](https://github.com/aucchen/social_democracy_alternate_history)
+## And overhaul overhaul mod of Awesdes original Biennio Rosso mod. (https://awesdes.github.io/biennio_rosso_alternate_history/)
 
 ## Included Libraries
 
