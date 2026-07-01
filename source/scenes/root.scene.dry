@@ -803,6 +803,7 @@ Q.maximalist_colour = '#DC143C';
 Q.labour_colour = '#B22222'
 Q.syndicalist_colour = '#2F2F2F'
 Q.reformist_colour = '#FF6961'
+Q.i_colour = '#808080'
 
 
 !}
