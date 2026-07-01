@@ -9,15 +9,15 @@ tags: party_affairs
 
 = Campaigning
 
-Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
+Whether or not we are in an electoral campaign, the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
 - @workers: The urban working class, our traditional support base.
 - @middle_class: The middle class of small independent businessmen and artisans.
 - @industrialists: The industrialists and landowners who traditionally oppose us.
 - @rural: Rural workers and small farmers.
 - @veterans: Newly unemployed veterans discharged from the army.
-- @catholics: Catholics, who typically support the People's Party.
-- @women: Women, who typically support the People's Party.
+- @catholics: Catholics, who typically support the <span style="color: [+ ppi_colour +];">**PPI**</span>.
+- @women: Women, who typically support the <span style="color: [+ ppi_colour +];">**PPI**</span>.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -35,7 +35,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: middle_class_psi += 6*(1-dissent); middle_class_psi -= 3 if anti_monarchist_sentiment <= 49; resources -= 1; middle_class_psi -= 2*(1-dissent) if nationalisation_adopted
 
-We have increased our campaigning among the middle class. [? if socialist_sentiment <= 49: Our campaign is worsened by their wariness of our ideals. ?][? if nationalisation_adopted : Our campaign is worsened by our radical political & economic plan. ?]
+We have increased our campaigning among the middle class. [? if socialist_sentiment <= 49: Our campaign is worsened by their wariness of our ideals. ?][? if nationalisation_adopted : Our campaign is worsened by our <span style="color: #c00000;">radical</span> political & economic plan. ?]
 
 @industrialists
 subtitle: -1 resources
@@ -78,4 +78,4 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources. (Need 1)
 on-arrival: women_psi += 6*(1-dissent); resources -= 1; women_psi += 2*(1-dissent) if abortion_rights; women_psi += 2*(1-dissent) if womens_rights > 2; 
 
-We have increased our campaigning among Women. [? if womens_rights > 2 : Our reforms to women's rights have made it easier for us to build support. ?]
+We have increased our campaigning among women. [? if womens_rights > 2 : Our reforms to women's rights have made it easier for us to build support. ?]
