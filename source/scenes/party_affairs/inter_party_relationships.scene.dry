@@ -8,7 +8,7 @@ card-image: img/InterPartyRelationships.jpg
 
 = Inter-Party Relationships
 
-The [+ psi_name +] cannot govern by itself yet. Though we have not historically been any coalitions or in government, if we are to change that or take a more reformist turn, improving our relations with the bourgeois parties is certainly necessary to do so, or we could continue going alone.
+The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> cannot govern by itself yet. Though we have not historically been any coalitions or in government, if we are to change that or take a more reformist turn, improving our relations with the bourgeois parties is certainly necessary to do so, or we could continue going alone.
 
 - @liberals: Strengthen our bonds with the liberal [+ ldr_name +] and [+ ul_name +] parties.
 - @catholic_party: Strengthen our bonds with the Catholic People's Party.
