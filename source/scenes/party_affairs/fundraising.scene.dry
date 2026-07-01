@@ -9,7 +9,7 @@ tags: party_affairs
 
 = Fundraising
 
-For better or for worse, the party cannot exist without money.
+For better or for worse, the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> cannot exist without money.
 
 - @maintain: Maintain our current dues.
 - @reduce: Reduce dues.
