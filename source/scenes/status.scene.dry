@@ -28,11 +28,11 @@ Paramilitary: [+ para_resources +]
 
 Internal Dissent: [+ dissent_percent : dissent +]
 
-<span style="color: #693232;">**Revolutionary Fervour**</span>!}: [+ revolutionary_fervour +]%
+<span style="color: #693232;">**Revolutionary Fervour**</span>: [+ revolutionary_fervour +]%
 
-[? if not_participating = 1: <span style="color: #700000;">**Revolutionary Exhaustion**</span>!}: [+ revolutionary_exhaustion_2 : exhaustion +] ?]
+[? if not_participating = 1: <span style="color: #700000;">**Revolutionary Exhaustion**</span>: [+ revolutionary_exhaustion_2 : exhaustion +] ?]
 
-<span style="color: [+ communist_colour +];">**Radicalisation**</span>!}: [+ radicalisation : radicalisation +]
+<span style="color: [+ communist_colour +];">**Radicalisation**</span>: [+ radicalisation : radicalisation +]
 
 [? if prime_minister = "D'Annunzio" : Our relationship with D'Annunzio is [+ dannunzio_relation : radicalisation +] ?]
 
@@ -56,23 +56,23 @@ Senate: [? if veto_removed == 0: Empowered ?][? if veto_removed == 1: Weakened ?
 
 Chamber of Deputies composition:
 
-[? if changed_name != 1: {!<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% ?]
-[? if changed_name = 1 : {!<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% ?]
-[? if pcdi_formed : {!<span style="color: [+ pcdi_colour +];">**PCd'I**</span>!}: [+ pcdi_seating_disp +]% ?]
-[? if psu_formed : {!<span style="color: [+ psu_colour +];">**PSU**</span>!}: [+ psu_seating_disp +]% ?]
-[? if not psri_collapse :{!<span style="color: [+ psri_colour +];">**PSRI**</span>!}: [+ psri_seating_disp +]% ?]
-[? if pll_formed : {!<span style="color: [+ pll_colour +];">**PLL**</span>!}: [+ pll_seating_disp +]% ?]
-[? if pri_prominent : {!<span style="color: [+ pri_colour +];">**PRI**</span>!}: [+ pri_seating_disp +]% ?]
-[? if not pdsi_formed : {!<span style="color: [+ ds_colour +];">**DS**</span>!}: [+ ds_seating_disp +]% ?]
-[? if pdsi_formed : {!<span style="color: [+ ds_colour +];">**PDSI**</span>!}: [+ ds_seating_disp +]% ?]
-{!<span style="color: [+ ppi_colour +];">**PPI**</span>!}: [+ ppi_seating_disp +]%
+[? if changed_name != 1: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% ?]
+[? if changed_name = 1 : <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% ?]
+[? if pcdi_formed : <span style="color: [+ pcdi_colour +];">**PCd'I**</span>!}: [+ pcdi_seating_disp +]% ?]
+[? if psu_formed : <span style="color: [+ psu_colour +];">**PSU**</span>!}: [+ psu_seating_disp +]% ?]
+[? if not psri_collapse : <span style="color: [+ psri_colour +];">**PSRI**</span>!}: [+ psri_seating_disp +]% ?]
+[? if pll_formed : <span style="color: [+ pll_colour +];">**PLL**</span>!}: [+ pll_seating_disp +]% ?]
+[? if pri_prominent : <span style="color: [+ pri_colour +];">**PRI**</span>!}: [+ pri_seating_disp +]% ?]
+[? if not pdsi_formed : <span style="color: [+ ds_colour +];">**DS**</span>!}: [+ ds_seating_disp +]% ?]
+[? if pdsi_formed : <span style="color: [+ ds_colour +];">**PDSI**</span>!}: [+ ds_seating_disp +]% ?]
+<span style="color: [+ ppi_colour +];">**PPI**</span>!}: [+ ppi_seating_disp +]%
 [? if not pldi_formed : {!<span style="color: [+ ldr_colour +];">**LDR**</span>!}: [+ ldr_seating_disp +]% ?]
-[? if pldi_formed : {!<span style="color: [+ ldr_colour +];">**PLDI**</span>!}: [+ ldr_seating_disp +]% ?]
-[? if not pli_formed : {!<span style="color: [+ ul_colour +];">**UL**</span>!}: [+ ul_seating_disp +]% ?]
-[? if pli_formed : {!<span style="color: [+ ul_colour +];">**PLI**</span>!}: [+ ul_seating_disp +]% ?]
-[? if pcs_formed : {!<span style="color: [+ pcs_colour +];">**PCS**</span>!}: [+ pcs_seating_disp +]% ?]
-[? if not pnf_formed :{!<span style="color: [+ pnf_colour +];">**FdC**</span>!}: [+ pnf_seating_disp +]% ?]
-[? if pnf_formed :{!<span style="color: [+ pnf_colour +];">**PNF**</span>!}: [+ pnf_seating_disp +]% ?]
+[? if pldi_formed : <span style="color: [+ ldr_colour +];">**PLDI**</span>!}: [+ ldr_seating_disp +]% ?]
+[? if not pli_formed : <span style="color: [+ ul_colour +];">**UL**</span>!}: [+ ul_seating_disp +]% ?]
+[? if pli_formed : <span style="color: [+ ul_colour +];">**PLI**</span>!}: [+ ul_seating_disp +]% ?]
+[? if pcs_formed : <span style="color: [+ pcs_colour +];">**PCS**</span>!}: [+ pcs_seating_disp +]% ?]
+[? if not pnf_formed : <span style="color: [+ pnf_colour +];">**FdC**</span>!}: [+ pnf_seating_disp +]% ?]
+[? if pnf_formed : <span style="color: [+ pnf_colour +];">**PNF**</span>!}: [+ pnf_seating_disp +]% ?]
 <span style="color: #808080;">**Others**</span>: [+ other_seating_disp +]%
 
 [? if psi_in_government = 1 : Budget: [+ budget +] ?]
