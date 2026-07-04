@@ -154,7 +154,7 @@ Unemployment: [+ unemployment_2 +]%
 
 <span style="color: [+ labour_colour +];">**Labour**</span> strength: [+ labour_strength : strength +], dissent: [+ labour_dissent : dissent +]
 
-<span style="color: [+ syndicalist_colour +];">**Syndicalist**</span> strength: [+ syndicalist_strength : strength +], dissent: [+ syndicalist_dissent : dissent +] ?]
+<span style="color: [+ syndicalist_colour +];">**Syndicalist**</span> strength: [+ syndicalist_strength : strength +], dissent: [+ syndicalist_dissent : dissent +] 
 
 <span style="color: [+ reformist_colour +];">**Reformist**</span> strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
