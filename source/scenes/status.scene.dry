@@ -146,17 +146,17 @@ Unemployment: [+ unemployment_2 +]%
 [? if not pnf_formed : <span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>: [+ pnf_relation : relationships +] ?]
 [? if pnf_formed : <span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>: [+ pnf_relation : relationships +] ?]
 
-= Internal Factions of the [+ psi_name +]
+= Internal Factions of the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>
 
-{!<span class="tooltip-text" title="The Communists are interested in radical, transformative policies and revolutionary action.">Communists</span>!} strength: [+ communist_strength : strength +], dissent: [+ communist_dissent : dissent +]
+<span style="color: [+ communist_colour +];">**Communist**</span> strength: [+ communist_strength : strength +], dissent: [+ communist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Maximalists is a faction of Centre Marxists, between reform and revolution.">Maximalists</span>!} strength: [+ maximalist_strength : strength +], dissent: [+ maximalist_dissent : dissent +]
+<span style="color: [+ maximalist_colour +];">**Maximalist**</span> strength: [+ maximalist_strength : strength +], dissent: [+ maximalist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labour's goal is economic reform and benefits for organized workers.">Labour</span>!} strength: [+ labour_strength : strength +], dissent: [+ labour_dissent : dissent +]
+<span style="color: [+ labour_colour +];">**Labour**</span> strength: [+ labour_strength : strength +], dissent: [+ labour_dissent : dissent +]
 
-[? if syndicalist_active : {!<span class="tooltip-text" title="Syndicalist's are a splinter faction of Labour, advocating for radical strikes and workers' councils.">Syndicalists</span>!} strength: [+ syndicalist_strength : strength +], dissent: [+ syndicalist_dissent : dissent +] ?]
+<span style="color: [+ syndicalist_colour +];">**Syndicalist**</span> strength: [+ syndicalist_strength : strength +], dissent: [+ syndicalist_dissent : dissent +] ?]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformists</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+<span style="color: [+ reformist_colour +];">**Reformist**</span> strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 @paramilitaries
 on-arrival: {!
