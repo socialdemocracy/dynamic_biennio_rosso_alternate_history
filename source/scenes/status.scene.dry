@@ -56,7 +56,7 @@ Senate: [? if veto_removed == 0: Empowered ?][? if veto_removed == 1: Weakened ?
 
 Chamber of Deputies composition:
 
-<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% ?]
+<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>!}: [+ psi_seating_disp +]% 
 [? if pcdi_formed : <span style="color: [+ pcdi_colour +];">**PCd'I**</span>: [+ pcdi_seating_disp +]% ?]
 [? if psu_formed : <span style="color: [+ psu_colour +];">**PSU**</span>: [+ psu_seating_disp +]% ?]
 [? if not psri_collapse : <span style="color: [+ psri_colour +];">**PSRI**</span>: [+ psri_seating_disp +]% ?]
