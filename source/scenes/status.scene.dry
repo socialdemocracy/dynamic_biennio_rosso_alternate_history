@@ -65,7 +65,7 @@ Chamber of Deputies composition:
 [? if not pdsi_formed : <span style="color: [+ ds_colour +];">**DS**</span>: [+ ds_seating_disp +]% ?]
 [? if pdsi_formed : <span style="color: [+ ds_colour +];">**PDSI**</span>: [+ ds_seating_disp +]% ?]
 <span style="color: [+ ppi_colour +];">**PPI**</span>: [+ ppi_seating_disp +]%
-[? if not pldi_formed : {!<span style="color: [+ ldr_colour +];">**LDR**</span>: [+ ldr_seating_disp +]% ?]
+[? if not pldi_formed : <span style="color: [+ ldr_colour +];">**LDR**</span>: [+ ldr_seating_disp +]% ?]
 [? if pldi_formed : <span style="color: [+ ldr_colour +];">**PLDI**</span>: [+ ldr_seating_disp +]% ?]
 [? if not pli_formed : <span style="color: [+ ul_colour +];">**UL**</span>: [+ ul_seating_disp +]% ?]
 [? if pli_formed : <span style="color: [+ ul_colour +];">**PLI**</span>: [+ ul_seating_disp +]% ?]
