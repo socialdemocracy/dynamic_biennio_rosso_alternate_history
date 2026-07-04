@@ -122,29 +122,29 @@ Unemployment: [+ unemployment_2 +]%
 
 = Inter-party Relations
 
-[? if pcdi_formed : {!<span class="tooltip-text" title="Communist Party of Italy">PCd'I</span>!}: [+ pcdi_relation : relationships +] ?]
+[? if pcdi_formed : <span style="color: [+ pcdi_colour +];">**PCd'I**</span>: [+ pcdi_relation : relationships +] ?]
 
-[? if psu_formed : {!<span class="tooltip-text" title="Unitary Socialist Party">PSU</span>!}: [+ psu_relation : relationships +] ?]
+[? if psu_formed : <span style="color: [+ psu_colour +];">**PSU**</span>: [+ psu_relation : relationships +] ?]
 
-[? if not psri_collapse : {!<span class="tooltip-text" title="Italian Reformist Socialist Party">PSRI</span>!}: [+ psri_relation : relationships +] ?]
+[? if not psri_collapse : <span style="color: [+ psri_colour +];">**PSRI**</span>: [+ psri_relation : relationships +] ?]
 
-[? if pll_formed : {!<span class="tooltip-text" title="Liberal Workers' Party">PLL</span>!}: [+ pll_relation : relationships +] ?]
+[? if pll_formed : <span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>: [+ pll_relation : relationships +] ?]
 
-[? if pri_prominent = 1: {!<span class="tooltip-text" title="Italian Republican Party">PRI</span>!}: [+ pri_relation : relationships +] ?]
+[? if pri_prominent = 1: <span style="color: [+ pri_colour +];">**PRI**</span>: [+ pri_relation : relationships +] ?]
 
-[? if not pdsi_formed : {!<span class="tooltip-text" title="Social Democracy">DS</span>!}: [+ ds_relation : relationships +] ?]
-[? if pdsi_formed : {!<span class="tooltip-text" title="Italian Social Democratic Party">PDSI</span>!}: [+ ds_relation : relationships +] ?]
+[? if not pdsi_formed : <span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>: [+ ds_relation : relationships +] ?]
+[? if pdsi_formed : <span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>: [+ ds_relation : relationships +] ?]
 
-{!<span class="tooltip-text" title="Italian People's Party">PPI</span>!}: [+ ppi_relation : relationships +]
+<span style="color: [+ ppi_colour +];">**PPI**</span>: [+ ppi_relation : relationships +]
 
-[? if not pldi_formed : {!<span class="tooltip-text" title="Liberals, Democrats and Radicals">LDR</span>!}: [+ ldr_relation : relationships +] ?]
-[? if pldi_formed : {!<span class="tooltip-text" title="Italian Democratic Liberal Party">PLDI</span>!}: [+ ldr_relation : relationships +] ?]
+[? if not pldi_formed : <span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>: [+ ldr_relation : relationships +] ?]
+[? if pldi_formed : <span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>: [+ ldr_relation : relationships +] ?]
 
-[? if not pli_formed : {!<span class="tooltip-text" title="Liberal Union">UL</span>!}: [+ ul_relation : relationships +] ?]
-[? if pli_formed : {!<span class="tooltip-text" title="Italian Liberal Party">PLI</span>!}: [+ ul_relation : relationships +] ?]
+[? if not pli_formed : <span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: [+ ul_relation : relationships +] ?]
+[? if pli_formed : <span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: [+ ul_relation : relationships +] ?]
 
-[? if not pnf_formed : {!<span class="tooltip-text" title="Italian Fasces of Combat">FdC</span>!}: [+ pnf_relation : relationships +] ?]
-[? if pnf_formed : {!<span class="tooltip-text" title="National Fascist Party">PNF</span>!}: [+ pnf_relation : relationships +] ?]
+[? if not pnf_formed : <span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>: [+ pnf_relation : relationships +] ?]
+[? if pnf_formed : <span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>: [+ pnf_relation : relationships +] ?]
 
 = Internal Factions of the [+ psi_name +]
 
