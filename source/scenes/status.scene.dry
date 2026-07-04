@@ -148,7 +148,7 @@ Unemployment: [+ unemployment_2 +]%
 
 = Party Leadership
 
-[? if not ul_name = UNINITIALIZED ?][? if ul_leader === "Giolitti" : [? <span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: Giolittian System (</span>**Giolitti**</span>)?][? if ul_leader === "Salandra" :<span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: National Conservatism (</span>**Salandra**</span>)?]
+[? if not ul_name = UNINITIALIZED ?][? if ul_leader = "Giolitti" : [? <span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: Giolittian System (<span style="color: [+ ul_colour +];">**Giolitti**</span>)?][? if ul_leader === "Salandra" :<span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: National Conservatism <span style="color: [+ ul_colour +];">**Salandra**</span>)?]
 
 = Internal Factions of the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>
 
