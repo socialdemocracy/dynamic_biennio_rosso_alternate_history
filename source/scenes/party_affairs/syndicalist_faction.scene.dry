@@ -1,4 +1,4 @@
-title: Syndicalism
+title: A new idea: Syndicalism
 new-page: true 
 is-card: true
 tags: party_affairs
@@ -7,17 +7,17 @@ card-image: img/ItalianSyndicalistUnion.jpg
 on-arrival: shuffle_leadership_timer = 0; syndicalist_active = 1;
 max-visits: 1
 
-= Syndicalism rises into prominence
+= <span style="color: [+ syndicalist_colour +];">**Syndicalism**</span> rises into prominence
 
-The Unione Sindacale Italiana, also known as the Italian Syndicalist Union, splintered from the majority labour faction of the General Confederation of Labour in 1912, remaining more aligned with the left-wing of the party, retaining low influence amongst the party. However, it seems that recent actions have cause the USI to gain notable influence within the party.
+The <span style="color: [+ syndicalist_colour +];">Unione Sindacale Italiana</span>, also known as the <span style="color: [+ syndicalist_colour +];">Italian Syndicalist Union</span>, splintered from the majority <span style="color: [+ labour_colour +];">**labour**</span> faction of the <span style="color: [+ labour_colour +];">General Confederation Of Labour</span> in 1912, remaining more aligned with the <span style="color: [+ communist_colour +];">**left**</span>-<span style="color: [+ maximalist_colour +];">**wing**</span> of the party, retaining low influence amongst the party. However, it seems that recent actions have cause the <span style="color: [+ syndicalist_colour +];">**USI**</span> to gain notable influence within the party.
 
-- @support_syn: Support the syndicalist movement.
+- @support_syn: Support the <span style="color: [+ syndicalist_colour +];">**syndicalist**</span> movement.
 - @no_new_ideas: We don't need any new ideas.
 
 @support_syn
 on-arrival: syndicalist_strength += 10; syndicalist_active = 1; reformist_dissent += 7; maximalist_dissent += 5; communist_dissent += 7; labour_dissent *= 1.5;
 
-We support the new leaders, and start using new-style propaganda techniques in our campaigns. The results are uncertain so far...
+We support the new ideology, and the <span style="color: [+ syndicalist_colour +];">**syndicalist**</span> movement starts growing. The results are uncertain so far...
 
 - @shuffle_leadership: We should use this opportunity to change the party's leadership.
 - @root: Continue...
@@ -25,4 +25,4 @@ We support the new leaders, and start using new-style propaganda techniques in o
 @no_new_ideas
 on-arrival: syndicalist_strength -= 10; syndicalist_active = 0; maximalist_strength += 7;
 
-We do not need these new ideas; they seem to imitate too closely those of the fascists.
+We do not need these new ideas; they seem to imitate too closely those of the <span style="color: [+ pnf_colour +];">**fascists**</span>.
