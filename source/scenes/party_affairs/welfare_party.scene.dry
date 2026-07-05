@@ -6,17 +6,19 @@ view-if: welfare_party_timer <= 0
 on-arrival: week_actions += 1; welfare_party_timer = 8; party_welfare_cost = 1; party_welfare_cost += 1 if party_welfare > 2; party_welfare_cost += 1 if party_welfare > 4; party_welfare_cost += 1 if party_welfare > 6; party_welfare_cost += 1 if party_welfare > 8
 card-image: img/WelfareParty.jpg
 tags: party_affairs
+face-image: img/wow-Photoroom (1).png
 
 = Dealing with Veterans' Welfare
-
-Following our defeat at Caporetto and the subsequent formation of the *Opera Nazionale Combattenti*, the previous liberal government promised soldiers welfare as high as the moon to re-moralise them, and now it is up to us to actually take care of our veterans and fufill these promises. 
+ 
+Following our defeat at the Battle of Caporetto and the subsequent formation of the <span style="color: [+ ppi_colour +];">*Opera Nazionale Combattenti*</span>, the previous <span style="color: [+ ldr_colour +];">**liberal**</span> government promised soldiers <span style="color: [+ ppi_colour +];">welfare</span> as high as the moon to re-moralise them, and now it is up to us to actually take care of our veterans and fufill these promises. 
 
 What do we do?
 
 # most of these will need to have a ministry involved as well; except the third one
 # place in party deck as well?
 
-- @veterans_organisations_party: Increase the funding of our own welfare organisations.
+- @veterans_organisations_party: Increase the funding of our own <span style="color: [+ psi_colour +];">welfare</span> organisations.
+- @veterans_give_onc: Increase the funding of the <span style="color: [+ ppi_colour +];">*Opera Nazionale Combattenti*</span> via collaborating with the <span style="color: [+ ppi_colour +];">**PPI**</span>.
 - @root: Our resources limits our ability to improve welfare.
 - @easy_discard
 
@@ -26,4 +28,12 @@ choose-if: resources >= party_welfare_cost
 unavailable-subtitle: Not enough resources. (Need [+ party_welfare_cost +])
 on-arrival: party_welfare += 1; resources -= party_welfare_cost; veterans_psi += 1*(1-dissent)*party_welfare; veterans_pnf -= 1*(1-dissent)*party_welfare; unemployment -= 0.2; unemployment -= 0.1 if party_welfare > 2; unemployment -= 0.1 if party_welfare > 4; unemployment -= 0.1 if party_welfare > 6; unemployment -= 0.1 if party_welfare > 8
 
-We begin distributing funds to the *Opera Nazionale Combattenti*, and the funds are reallocated to aid veterans immediately.
+We begin distributing funds to our own veterans organizations which are linked to us directly, and the funds are reallocated to aid veterans immediately.
+
+@veterans_give_onc
+subtitle: -[+ party_welfare_cost +] resource 
+choose-if: resources >= party_welfare_cost
+unavailable-subtitle: Not enough resources. (Need [+ party_welfare_cost +]) 
+on-arrival: party_welfare += 1; ppi_relation += 1.5; ldr_relation += 1.5; resources -= party_welfare_cost; veterans_psi += 1*(1-dissent)*party_welfare; veterans_ppi += 1; veterans_pnf -= 2*(1-dissent)*party_welfare; unemployment -= 0.2; unemployment -= 0.2 if party_welfare > 2; unemployment -= 0.2 if party_welfare > 4; unemployment -= 0.2 if party_welfare > 6; unemployment -= 0.2 if party_welfare > 8
+
+We begin distributing funds to the <span style="color: [+ ppi_colour +];">*Opera Nazionale Combattenti*</span>, and the funds are reallocated to aid veterans immediately. As a result, our relations with the <span style="color: [+ ppi_colour +];">**PPI**</span> and the <span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>  have gone up.
