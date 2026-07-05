@@ -9,7 +9,7 @@ tags: party_affairs
 
 = Rallying against Grandi
 
-Our worst fears have come true. A fascist is in control of Italy, though not the way we expected it. Dino Grandi. *Ras* leader and successor to Mussolini's ideological ideals. Grandi represents a nastier breed of fascism compared to Mussolini's – more violent, less politically apt and unwilling to compromise.
+Our worst fears have come true. A <span style="color: [+ pnf_colour +];">**fascist**</span> is in control of <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**a**</span><span style="color: #CD212A;">**ly**</span>, though not the way we expected it. Dino Grandi. *Ras* leader and successor to Mussolini's ideological ideals. Grandi represents a nastier breed of <span style="color: [+ pnf_colour +];">**fascism**</span> compared to Mussolini's – more violent, less politically apt and unwilling to compromise.
 
 What should we do?
 
@@ -28,7 +28,7 @@ on-arrival: abl_strength -= 3; ard_strength -= 5; fdc_strength -= 9; workers_pnf
 We campaign against the actions the <span style="color: [+ pnf_colour +];">**Squadrismo**</span> have done under Grandi's control, which seems to resonate with the workers and middle class who wish to see a restoration of order.
 
 @grandi_relations
-subtitle: Grandi's uncharismatic nature and his policies have alienated some among the other parties.
+subtitle: Grandi's uncharismatic nature and his violent <span style="color: [+ pnf_colour +];">**fascism**</span> have alienated some among the other parties.
 on-arrival: ds_relation += 5; ul_relation += 5; ldr_relation += 5; ppi_relation += 5;
 
 Some policies that Grandi has persued have indeed antagonised a not so insignificant portion of the <span style="color: #008C45;">**Ita**</span><span style="color: #E5E4E2;">**li**</span><span style="color: #CD212A;">**an**</span> political establishment, viewing his uncharismatic leadership as a sign of weakness.
