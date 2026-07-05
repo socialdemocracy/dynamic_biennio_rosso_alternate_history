@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/"
         property="ifiction:ifid" content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
-    <title> Dynamic Biennio Rosso: An Alternate History - Autumn Chen, Awes Des, & socialdemocracy</title>
-    <link rel="icon" type="image/jpeg" href="img/chp5_20251125_200815_0000.svg">
+    <link rel="icon" type="image/x-icon" href="img/Arditi.png">
+    <title>Biennio Rosso: An Alternate History - Autumn Chen & AwesDes</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <script src="jquery-1.11.1.min.js"></script>
     <script src="d3.v7.min.js"></script>
     <script src="d3-parliament.js"></script>
     <script src="d3-linegraph.js"></script>
-    <script src="data.js"></script>
     <script src="core.js"></script>
     <script src="game.js"></script>
   </head>
   <body>
-    <button id="music-toggle-btn" onclick="window.toggleMusicButton()" title="Toggle Music" aria-label="Toggle Music">
-      <img id="music-on-icon" src="img/music_on.png" width="48" height="40" alt="Music On"/>
-      <img id="music-off-icon" src="img/music_off.png" width="48" height="40" alt="Music Off" style="display:none"/>
-    </button>
-
     <div class="background" id="bg2">
     </div>
 
@@ -109,25 +103,25 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <hr> </td>
-                </tr>
-                <tr>
-                    <td>
-                        Color scheme:
-                    </td>
-                    <td>
-                        <label for="light_mode">Light mode</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="light_mode" name="ld_mode" value="1" onclick="window.enableLightMode();">
-                    </td>
-                    <td>
-                        <label for="dark_mode">Dark mode</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="dark_mode" name="ld_mode" value="0" onclick="window.enableDarkMode();">
-                    </td>
-                </tr>
+                        <td> <hr> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Color scheme:
+                        </td>
+                        <td>
+                            <label for="light_mode">Light mode</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="light_mode" name="ld_mode" value="1" onclick="window.enableLightMode();">
+                        </td>
+                        <td>
+                            <label for="dark_mode">Dark mode</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="dark_mode" name="ld_mode" value="0" onclick="window.enableDarkMode();">
+                        </td>
+                    </tr>
                 <tr>
                     <td>
                         <button onclick="window.hideOptions();">Close</button>
@@ -303,8 +297,9 @@
     <div id='page'>
         <div id="mid_panel">
             <header>
-                <h1 id="game-title"> Dynamic Biennio Rosso: An Alternate History</h1>
-                <h2 id="game-author">Autumn Chen, Awesdes, & socialdemocracy</h2>
+                <h1 id="game-title"><h1 style="color:Red;">Biennio</h1> <h1 style="color:rgb(170, 170, 170);">Rosso</h1>: <h1 style="color:green;">An</h1> <h1 style="color:rgb(170, 170, 170);">Alternate</h1> <h1 style="color:red;">History</h1></h1>
+                <br>
+                <h2 id="game-author">AwesDes</h2>
 
                 <div id="header-links">
                     <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
@@ -318,9 +313,13 @@
                         <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
                         <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
                         <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="interior_policies_tab" onclick="window.changeTab('status.interior_policies', 'interior_policies_tab');">Interior Policies</button>
                         <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
-                        <button class="tab_button" id="foreign_policy_tab" onclick="window.changeTab('status.foreign_policy', 'foreign_policy_tab');">Foreign Policy</button>
+                        <button class="tab_button" id="foreign_tab" onclick="window.changeTab('status.foreign', 'foreign_tab');">Foreign Policy</button>
+                        <button class="tab_button" id="interior_tab" onclick="window.changeTab('status.interior', 'interior_tab');">Interior Policies</button>
+                    </div>
+                    <div id="qualities">
+                    </div>
+                </div>
             </div>
 
             <div id='content'>
