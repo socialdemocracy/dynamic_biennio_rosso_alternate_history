@@ -9,26 +9,26 @@ tags: party_affairs
 
 = Revolution or Reform?
 
-Our party is wracked as to how to deal with the bourgeois and the monarchy. The Left-wing Maximalists advocate for direct, revolutionary action, seeking to overthrow the autocratic Monarchy utilising the paramilitaries and with popular support. On the other hand, the Reformists advocate for governmental participation in government, seeking to advocate and reform the political system within parliamentary means, while the Maximalists, caught in the middle, advocate for Centre Marxism, situating themselves between the revolutionary rhetoric of the Left-wing of the party and the reformist alignment of the Right-wing of the party. 
+The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> is wracked as to how to deal with the bourgeois and the <span style="color: [+ i_colour +];">**monarchy**</span>. The <span style="color: [+ communist_colour +];">**left**</span>-<span style="color: [+ communist_colour +];">**wing**</span>, the <span style="color: [+ communist_colour +];">**Communists**</span>, advocate for direct, <span style="color: #9B0000;">**revolutionary**</span> action, seeking to overthrow the <span style="color: [+ i_colour +];">**autocratic monarchy**</span> utilising the paramilitaries and our popular support. On the other hand, the <span style="color: [+ reformist_colour +];">**Reformists**</span> advocate for democratic participation in government, seeking to reform the political system within parliamentary means, while the <span style="color: [+ maximalist_colour +];">**Maximalists**</span>, caught in the middle, advocate for Center-<span style="color: #9B0000;">**Marxism**</span>, situating themselves between the <span style="color: #9B0000;">**revolutionary**</span> rhetoric of the <span style="color: [+ communist_colour +];">**left**</span>-<span style="color: [+ communist_colour +];">**wing**</span> of the party and the <span style="color: [+ reformist_colour +];">**reformist**</span> alignment of the <span style="color: [+ reformist_colour +];">**right**</span>-<span style="color: [+ labour_colour +];">**wing**</span> of the <span style="color: [+ psi_colour +];">**party**</span>. 
 
-[? if communist_strength > reformist_strength : The party is currently leaning more into its revolutionary support. ?]
+[? if communist_strength > reformist_strength : The party is currently leaning more into its <span style="color: #9B0000;">**revolutionary**</span> support. ?]
 
 [? if reformist_strength > communist_strength : The party is currently leaning more into parliamentary means as a cause. ?]
 
-- @support_reformists: Sway sympathetic members towards reformism.
-- @support_revolutionaries: Sway sympathetic members towards revolutionary ideals.
+- @support_reformists: Sway sympathetic members towards <span style="color: [+ reformist_colour +];">**reformism**</span>.
+- @support_revolutionaries: Sway sympathetic members towards <span style="color: #9B0000;">**revolutionary**</span> ideals.
 - @support_none: Keep party alignments the same.
 - @easy_discard
 
 @support_reformists
 on-arrival: communist_dissent += 7*(1-dissent); reformist_dissent -= 7*(1-dissent); radicalisation -= 0.5; revolutionary_fervour -= 3; reformist_strength += 5*(1-dissent); maximalist_strength -= 5*(1-dissent);
 
-We are able to sway some of the more right-wing members of the party to our cause, advocating for a more reformist approach. This only further exacerbates the split within the party, however.
+We are able to sway some of the more <span style="color: [+ reformist_colour +];">**right**</span>-<span style="color: [+ labour_colour +];">**wing**</span members of the party to our cause, advocating for a more <span style="color: [+ reformist_colour +];">**reformist**</span> approach. This only further exacerbates the split within the <span style="color: [+ psi_colour +];">**party**</span>, however.
 
 @support_revolutionaries
 on-arrival: communist_dissent -= 7*(1-dissent); reformist_dissent += 7*(1-dissent); radicalisation += 0.5; revolutionary_fervour += 3; communist_strength += 5*(1-dissent); maximalist_strength -= 5*(1-dissent); revolutionary_fervor += 0.1 if not_participating = 1
 
-We are able to sway some of the more left-wing members of the party to our cause, advocating for a more revolutionary approach. This only further exacerbates the split within the party, however.
+We are able to sway some of the more <span style="color: [+ communist_colour +];">**left**</span>-<span style="color: [+ communist_colour +];">**wing**</span> members of the party to our cause, advocating for a more <span style="color: #9B0000;">**revolutionary**</span> approach. This only further exacerbates the split within the <span style="color: [+ psi_colour +];">**party**</span>, however.
 
 @support_none
 
