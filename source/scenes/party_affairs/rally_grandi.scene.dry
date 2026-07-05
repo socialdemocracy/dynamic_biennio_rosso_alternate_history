@@ -27,7 +27,7 @@ on-arrival: abl_strength -= 3; ard_strength -= 5; fdc_strength -= 9; workers_pnf
 
 We campaign against the actions the <span style="color: [+ pnf_colour +];">**Squadrismo**</span> have done under Grandi's control, which seems to resonate with the workers and middle class who wish to see a restoration of order.
 
-@dannunzio_relation
+@grandi_relations
 subtitle: Grandi's uncharismatic nature and his policies have alienated some among the other parties.
 on-arrival: ds_relation += 5; ul_relation += 5; ldr_relation += 5; ppi_relation += 5;
 
