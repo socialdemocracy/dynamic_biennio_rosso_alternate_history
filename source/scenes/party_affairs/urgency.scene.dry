@@ -8,14 +8,14 @@ max-visits: 6
 card-image: img/FasciUrgency.jpg
 tags: party_affairs
 
-= Fascism in Italy
+= <span style="color: [+ pnf_colour +];">**Fascism**</span> in <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**a**</span><span style="color: #CD212A;">**ly**</span>
 
-Following the end of the First World War, it seems a new ideology has taken root in Italy, preying on the nationalistic sentiment of veterans, angered by our so-called 'mutilated victory' and promising revanchism, and that ideology is Fascism. Already, thousands are signing up in droves across the nation, from disgruntled veterans who have seen the horrors of war to youth who idolise our victory in the war, expanding the electorate of voters of the PNF and their paramilitary wing.
+Following the end of the First World War, it seems a new ideology has taken root in <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**a**</span><span style="color: #CD212A;">**ly**</span>, preying on the <span style="color: [+ pnf_colour +];">nationalistic</span> sentiment of veterans, angered by our so-called 'mutilated victory' and promising revanchism, and that ideology is <span style="color: [+ pnf_colour +];">**Fascism**</span>. Already, thousands are signing up in droves across the nation, from disgruntled veterans who have seen the horrors of war to youth who idolise our victory in the war, expanding the electorate of voters of the <span style="color: [+ pnf_colour +];">**PNF**</span> and their paramilitary wing.
 
-Though initially thought to be moribund, it seems we have been proven wrong, and some within the party warn of its growing strength, especially as the *Biennio Rosso* continues on, and anti-socialist sentiment grows, it would not bode well for us if they are forced to turn to the fascists.
+Though initially thought to be moribund, it seems we have been proven wrong, and some within the party warn of its growing strength, especially as the <span style="color: [+ psi_colour +];">*Biennio Rosso*</span> continues on, and anti-<span style="color: [+ psi_colour +];">**socialist**</span> sentiment grows, it would not bode well for us if they are forced to turn to the <span style="color: [+ pnf_colour +];">**fascists**</span>.
 
 - @fascist_paramilitary: Our main goal should be targeting their paramilitaries.
-- @fascist_parties: Our main goal should be to prevent the Bloc from ever entering government. 
+- @fascist_parties: Our main goal should be to prevent the <span style="color: [+ pnf_colour +];">**Bloc**</span> from ever entering government. 
 - @fascist_votes: Our main goal should be campaign to their voters to pull the rug from under them.
 - @fascist_ignore: It would be best to ignore them; giving them attention only improves their appeal.
 - @easy_discard
@@ -37,7 +37,7 @@ We focus on our relations with the other parties, ensuring they do not find them
 subtitle: The threat comes from their seats in the Chamber, after all.
 on-arrival: fasci_urgency += 1; veterans_pnf -= 2*(1-dissent); nationalist_sentiment -= 2; veterans_pnf -= 3*(1-dissent) if syndicalist_active; middle_class_pnf -= 3*(1-dissent) if syndicalist_active;
 
-We focus on their voters, campaigning towards them hard, sometimes clashing with the Fasci. [? if syndicalist_active : Our willingness to accept the syndicalist movement has swayed more away from the fascists. ?]
+We focus on their voters, campaigning towards them hard, sometimes clashing with the <span style="color: [+ pnf_colour +];">**Fasci**</span>. [? if syndicalist_active : Our willingness to accept the syndicalist movement has swayed more away from the <span style="color: [+ pnf_colour +];">**fascists**</span>. ?]
 
 @fascist_ignore
 subtitle: This is merely a post-war movement that will die down sooner or later, after all.
