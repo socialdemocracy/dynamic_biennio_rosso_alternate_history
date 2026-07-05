@@ -13,7 +13,7 @@ The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> is wracked 
 
 The <span style="color: [+ communist_colour +];">**left-wing**</span> of the party, alongside the <span style="color: [+ maximalist_colour +];">**Maximalists**</span> are in favour of the *Maximum Program*, believing this to be an opportunity for us to end capitalism and begin the mass socialisation of the economy, land redistributions and expanding the current work councils.
 
-On the other hand, the <span style="color: [+ reformist_colour +];">**reformists**</span>, alongside our <span style="color: [+ labour_colour +];">**trade unions**</span>, are in favour of the *Minimum Program*, instead advocating for more immediate <span style="color: [+ psi_colour +];">**social**</span> and economic reforms to improve the lives of its workers, such as progressive taxation, labour laws, social security or public works without incurring or worsening the current inflation and deficit. 
+On the other hand, the <span style="color: [+ reformist_colour +];">**reformists**</span>, alongside our <span style="color: [+ labour_colour +];">**trade unions**</span>, are in favour of the *Minimum Program*, instead advocating for more immediate <span style="color: [+ psi_colour +];">social</span> and economic reforms to improve the lives of its workers, such as progressive taxation, labour laws, social security or public works without incurring or worsening the current inflation and deficit. 
 
 - @support_left: Support the Maximum Program.
 - @support_moderate: Support the Minimum Program.
@@ -28,14 +28,14 @@ go-to: support_left_progress if nationalisation_support < 2; adopt_left if natio
 
 @support_left_progress
 
-We attempt to convince the party to support the Maximum Program. <span style="color: [+ communist_colour +];">**leftists**</span> argue that this policy is in accordance with our long-standing <span style="color: [+ psi_colour +];">**socialist**</span> platform, while <span style="color: [+ reformist_colour +];">**reformists**</span>, alongside some of our <span style="color: [+ labour_colour +];">**trade unions**</span> argue that the plan is unrealistic, and that we need to focus on more immediate improvements to workers' lives.
+We attempt to convince the party to support the Maximum Program. <span style="color: [+ communist_colour +];">**leftists**</span> argue that this policy is in accordance with our long-standing <span style="color: [+ psi_colour +];">socialist</span> platform, while <span style="color: [+ reformist_colour +];">**reformists**</span>, alongside some of our <span style="color: [+ labour_colour +];">**trade unions**</span> argue that the plan is unrealistic, and that we need to focus on more immediate improvements to workers' lives.
 
 We have not yet formally adopted the plan. More work needs to be done.
 
 @adopt_left
 on-arrival: syndicalist_strength += 10; communist_strength += 15; communist_dissent -= 10; reformist_dissent += 10; labour_dissent += 6; nationalisation_adopted = 1; fasci_coup_progress += 1; economic_plan = 1; ldr_moderates -= 0.2; ds_left -= 0.2; radicalisation += 0.1;
 
-With our hard work, we have convinced the majority of the party to adopt the <span style="color: [+ psi_colour +];">**socialist**</span> economic plan! Bourgeois opposition is likely to be fierce. [? if psi_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
+With our hard work, we have convinced the majority of the party to adopt the <span style="color: [+ psi_colour +];">socialist</span> economic plan! Bourgeois opposition is likely to be fierce. [? if psi_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
 subtitle: Support the call for extensive economic and labour reforms -- This will require participation in government.
