@@ -24,17 +24,17 @@ The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> runs a veri
 
 @commercial
 title: Make our newspapers more commercialized by broadening their appeal beyond party supporters.
-subtitle: This might upset <span style="color: [+ communist_colour +];">**ideological purists**</span>, but it may bring in more funds and perhaps expose the middle class to <span style="color: [+ psi_colour +];">**socialist**</span> views.
+subtitle: This might upset <span style="color: [+ communist_colour +];">ideological purists</span>, but it may bring in more funds and perhaps expose the middle class to <span style="color: [+ psi_colour +];">**socialist**</span> views.
 on-arrival: resources += 1; middle_class_psi += 4*(1 - dissent); communist_dissent += 4; labour_dissent += 7; socialist_sentiment += 2; pcdi_gramsci += 0.5;
 
 Our commercialized newspapers are able to bring in more funds. However, the <span style="color: [+ communist_colour +];">**communist**</span> and <span style="color: [+ labour_colour +];">**labour**</span> factions express their displeasure.
 
 @campaign
-title: The purpose of our media is to elect more <span style="color: [+ psi_colour +];">**socialists**</span>.
+title: The purpose of our media is to elect more <span style="color: [+ psi_colour +];">socialists</span>.
 subtitle: Our newspapers will focus on the electoral campaign.
 on-arrival: campaign_media += 1; workers_psi += 4*(1 - dissent); socialist_sentiment += 1*(1-dissent);
 
-Our campaign media is mostly reaching the workers who are already saturated with <span style="color: [+ psi_colour +];">**Socialist**</span> propaganda, but it must be doing *something*, or at least that is what we hope.
+Our campaign media is mostly reaching the workers who are already saturated with <span style="color: [+ psi_colour +];">socialist</span> propaganda, but it must be doing *something*, or at least that is what we hope.
 
 @ideological
 title: We will have vibrant ideological debate within our newspapers.
