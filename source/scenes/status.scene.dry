@@ -190,33 +190,33 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Legality
 
-[? if not national_congress_seen : Fasci: [? if not fdc_banned : Operating?][? if fdc_banned : Banned?][? if fasci_adp_active or fasci_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if fdc_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : Arditismo: [? if not ard_banned : Operating?][? if ard_banned : Banned?][? if arditi_adp_active or arditi_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : <span style="color: #FFF200;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if ard_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : Anti-Bolshevik Leagues: [? if not abl_banned : Operating?][? if abl_banned : Banned?][? if abl_adp_active or abl_rg_active :, Under Attack ?] ?]
+[? if not national_congress_seen : Anti-<span style="color: #700000;">**Bolshevik**</span> Leagues: [? if not abl_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if abl_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : Red Guards: [? if not rg_banned : Operating ?][? if rg_banned : Banned ?] ?]
+[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #A8D5BA;">**Operating**</span> ?][? if rg_banned : <span style="color: #d42f2f;">**Banned**</span> ?] ?]
 
-[? if arditi_formed : Arditi del Popolo: Operating ?]
+[? if arditi_formed : <span style="color: #FFF200;">**Arditi del Popolo**</span>: <span style="color: #A8D5BA;">**Operating**</span> ?]
 
 = Paramilitary Forces
 
-[? if not national_congress_seen and not pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group asscoiated with the PSI.">Red Guards</span>!} Strength: [+ rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and not pcdi_formed : <span style="color: #693232;">**Red Guard**</span> Strength: [+ rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and not pcdi_formed : Red Guard Militarization: [+ rg_militancy : militancy +] ?]
+[? if not national_congress_seen and not pcdi_formed : <span style="color: #693232;">**Red Guard**</span> Militarization: [+ rg_militancy : militancy +] ?]
 
-[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its radical wing asscoiated with the PCd'I.">Red Guards - PCd'I</span>!} Strength: [+ sov_rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and pcdi_formed : <span style="color: [+ communist_colour +];">**Red Guards - PCd'I**</span> Strength: [+ sov_rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and pcdi_formed : Red Guard - PCd'I Militarization: [+ sov_rg_militancy : militancy +] ?]
+[? if not national_congress_seen and pcdi_formed : <span style="color: [+ communist_colour +];">**Red Guards - PCd'I**</span> Militarization: [+ sov_rg_militancy : militancy +] ?]
 
-[? if not national_congress_seen and pcdi_formed : {!<span class="tooltip-text" title="The Red Guards are a paramilitary socialist group, its moderate wing asscoiated with the PSI.">Red Guards - PSI</span>!} Strength: [+ rg_strength_2 +] thousand ?]
+[? if not national_congress_seen and pcdi_formed : <span style="color: [+ reformist_colour +];">**Red Guards - PSI**</span> Strength: [+ rg_strength_2 +] thousand ?]
 
-[? if not national_congress_seen and pcdi_formed : Red Guard - PSI Militarization: [+ rg_militancy : militancy +] ?]
+[? if not national_congress_seen and pcdi_formed : <span style="color: [+ reformist_colour +];">**Red Guards - PSI**</span> Militarization: [+ rg_militancy : militancy +] ?]
 
-[? if arditi_formed : {!<span class="tooltip-text" title="The Arditi del Popolo is a anti-fascist group composed of anarchists to communists to republicans.">Arditi del Popolo</span>!} Strength: [+ adp_strength_2 +] thousand ?]
+[? if arditi_formed : <span style="color: #FFF200;">**Arditi del Popolo**</span> Strength: [+ adp_strength_2 +] thousand ?]
 
-[? if arditi_formed: Arditi del Popolo Militarization: [+ adp_militancy : militancy +] ?]
+[? if arditi_formed: <span style="color: #FFF200;">**Arditi del Popolo**</span> Militarization: [+ adp_militancy : militancy +] ?]
 
 [? if not national_congress_seen : {!<span class="tooltip-text" title="The Fasci is a right-wing organisation of war veterans associated with the PNF.">Fasci</span>!} Strength: [+ fdc_strength_2 +] thousand ?]
 
