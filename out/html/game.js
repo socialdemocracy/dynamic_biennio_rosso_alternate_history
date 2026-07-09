@@ -329,7 +329,7 @@
         if (searchString === 'Red Guards - PSI' && Q.rg_strength !== undefined) {
             var strength = getSizeText(Q.rg_strength);
             var militancy = getMilitancyText(Q.rg_militancy);
-            var content = baseTooltip.explanationText + '<br>Strength: ' + strength + '<br>Militarization: ' + militancy;
+            return baseTooltip.explanationText + '<br>Strength: ' + strength + '<br>Militarization: ' + militancy;
         }
         
         if (searchString === 'Arditi del Popolo' && Q.adp_strength !== undefined) {
