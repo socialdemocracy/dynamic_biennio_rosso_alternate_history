@@ -11,7 +11,7 @@ card-image: img/InterPartyRelationships.jpg
 The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> cannot govern by itself yet. Though we have not historically been any coalitions or in government, if we are to change that or take a more reformist turn, improving our relations with the bourgeois parties is certainly necessary to do so, or we could continue going alone.
 
 - @liberals: Strengthen our bonds with the liberal <span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span> and <span style="color: [+ ul_colour +];">**[+ ul_name +]**</span> parties.
-- @catholic_party: Strengthen our bonds with the <span style="color: [+ ppi_colour +];">**PPI**</span>.
+- @catholic_party: Strengthen our bonds with the <span class="tooltip-text" title="PPI" style="color: [+ ppi_colour +];">**PPI**</span>.
 - @leftists: Strengthen our bonds with our ideological allies in the <span style="color: [+ psri_colour +];">**PSRI**</span> and <span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>[? if pll_formed :, as well as the <span style="color: [+ pll_colour +];">**PLL**</span> ?][? if not pri_prominent :.?] [? if pri_prominent : and the <span style="color: [+ pri_colour +];">**PRI**</span>. ?]
 - @splinters: Strengthen our bonds with our splinter parties; [? if pcdi_formed : the <span style="color: [+ pcdi_colour +];">**PCd'I**</span> ?] [? if pcdi_formed and psu_formed : and ?] [? if psu_formed : the <span style="color: [+ psu_colour +];">**PSU**</span> ?].
 - @psi_alone: The <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> can stand alone for now.
