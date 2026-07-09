@@ -364,7 +364,7 @@ window.displayText = function (text) {
             return baseTooltip.explanationText + '<br>Strength: ' + strenghtText + '<br>Dissent: ' + dissentText;
         }
       
-        if (searchString === 'PCd'I' && Q.pcdi_relation !== undefined) {
+        if (searchString === "PCd'I" && Q.pcdi_relation !== undefined) {
             var relationText = getRelationshipText(Q.pcdi_relation);
             return baseTooltip.explanationText + '<br>Relation: ' + relationText;
         }
@@ -450,7 +450,7 @@ window.displayText = function (text) {
             return baseTooltip.explanationText + '<br>Strength: ' + strength + '<br>Militarization: ' + militancy;
         }
      
-        if (searchString === 'Red Guards - PCd'I' && Q.sov_rg_strength !== undefined) {
+        if (searchString === "Red Guards - PCd'I" && Q.sov_rg_strength !== undefined) {
             var strength = getSizeText(Q.sov_rg_strength);
             var militancy = getMilitancyText(Q.sov_rg_militancy);
             return baseTooltip.explanationText + '<br>Strength: ' + strength + '<br>Militarization: ' + militancy;
