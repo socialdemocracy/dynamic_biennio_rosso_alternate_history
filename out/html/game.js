@@ -417,6 +417,37 @@
                 } else if (colour) {
                     return `<span style='${style}'>${innerText}</span>`;
                 }
+              // Tooltip mouse-position fixer — update CSS vars the tooltip CSS expects
+(function() {
+  // Update the hovered .mytooltip with the mouse coords so the .mytooltiptext
+  // CSS variables (--mouse-x/--mouse-y) are available for positioning.
+  function handleMouseMove(e) {
+    try {
+      // Find the first tooltip element currently hovered
+      const hovered = document.querySelector('.mytooltip:hover');
+      if (hovered) {
+        hovered.style.setProperty('--mouse-x', e.clientX + 'px');
+        hovered.style.setProperty('--mouse-y', e.clientY + 'px');
+      }
+    } catch (err) {
+      // Fail silently in old browsers
+      // console && console.error && console.error(err);
+    }
+  }
+
+  document.addEventListener('mousemove', handleMouseMove);
+
+  // Optional: support touch (touchmove) so tooltips can appear near touches
+  document.addEventListener('touchmove', function(e) {
+    const touch = e.touches && e.touches[0];
+    if (!touch) return;
+    const hovered = document.querySelector('.mytooltip:hover');
+    if (hovered) {
+      hovered.style.setProperty('--mouse-x', touch.clientX + 'px');
+      hovered.style.setProperty('--mouse-y', touch.clientY + 'px');
+    }
+  }, {passive: true});
+})();
     
                 return match;
             });
