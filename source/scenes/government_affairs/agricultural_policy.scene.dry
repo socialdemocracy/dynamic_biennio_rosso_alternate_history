@@ -9,12 +9,12 @@ tags: govt_affairs
 
 = Agricultural Policy
 
-With control of the Agricultural Ministry in the hands of the [+ psi_name +], it seems there is much work to be done in regards to reform. Many in the party are calling for land seizures, and some of our rural voters are requesting aid and financing to help in relieving their economic burden. What do we do?
+With control of the Agricultural Ministry in the hands of the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>, it seems there is much work to be done in regards to reform. Many in the party are calling for land seizures, and some of our rural voters are requesting aid and financing to help in relieving their economic burden. What do we do?
  
-- @support_coops: Support Agricultural cooperatives.
-- @support_coops_2: Continue supporting Agricultural cooperatives.
-- @land_seize: Land Seizure
-- @agricultural_finance: Agricultural Financing
+- @support_coops: Help establish agricultural cooperatives
+- @support_coops_2: Continue our policy of supporting agricultural cooperatives
+- @land_seize: Enact a land seizure program
+- @agricultural_finance: Increase the financing of agricultural programs
 - @root: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
@@ -27,7 +27,7 @@ view-if: cooperatives_support = 0
 We are able to utilise the Ministry to support peasants and cooperatives, protecting them using legal means.
 
 @support_coops_2
-subtitle: Continue the supporting peasant cooperatives and aiding them.
+subtitle: Continue supporting peasant cooperatives and aiding them.
 on-arrival: coalition_dissent += 1 if in_unstable_coalition; rural_psi += 5*(1-dissent) if not in_unstable_coalition; rural_clc += 5*(1-dissent) if centre_left_coalition; rural_scc += 5*(1-dissent) if socialist_catholic_coalition; ldr_relation -= 5; ul_relation -= 5; ds_relation -= 3; labour_strength += 9; cooperatives_support += 1; psri_relation += 5*(1-dissent); socialist_sentiment += 2*(1-dissent);
 view-if: cooperatives_support >=1
 max-visits: 2
@@ -35,7 +35,7 @@ max-visits: 2
 We continue utilising the Ministry to support peasants and cooperatives, protecting them using legal means.
 
 @land_seize
-subtitle: Conduct small seizures of land from large estates to give redistribute to peasants and cooperatives, mainly situated in the central and northern regions. [? if liberal_reform_accepted : This will break our agreement with the Liberals! ?]
+subtitle: Conduct small seizures of land from large estates to give redistribute to peasants and cooperatives, mainly situated in the central and northern regions. [? if liberal_reform_accepted : This will break our agreement with the <span style="color: [+ ldr_colour +];">**liberals**</span>! ?]
 unavailable-subtitle: [? if judicial_reform < 2: The judiciary would not support this. ?]
 choose-if: judicial_reform >= 2
 on-arrival: {!
@@ -90,9 +90,9 @@ Q.psri_relation += 3*(1-Q.dissent);
 go-to: ldr_promise_vonc if ldr_promise_failed == 1
 max-visits: 3
 
-We are able to seize land form large estate, mostly uncultivated land and hand them out to peasants and veteran-run cooperatives, reducing unemployment.
+We are able to seize land from large estates, mostly uncultivated land and hand them out to peasants and veteran-run cooperatives, reducing unemployment.
 
-[? if ldr_promise_failed : Unfortunately, our land seizure has led us to break our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, our land seizure has led us to break our agreement with the <span style="color: [+ ldr_colour +];">*liberals*</span>, and their representatives have already requested a meeting with us. ?]
 
 @agricultural_finance
 subtitle: -1 Budget - Increase financing for agricultural credit and insurance. [? if budget = 0 and liberal_budget_accepted : This will put us into a deficit! ?]
@@ -101,7 +101,7 @@ unavailable-subtitle: Not enough budget. (Need 1)
 on-arrival: budget -= 1; agricultural_policy += 1; ldr_promise_failed = 1 if budget < 0 and liberal_budget_accepted; rural_psi += 7*(1-dissent) if not in_unstable_coalition; rural_clc += 7*(1-dissent) if centre_left_coalition; rural_scc += 7*(1-dissent) if socialist_catholic_coalition; rural_pnf -= 3*(1-dissent); communist_dissent += 8; maximalist_dissent += 6; labour_dissent += 3; inflation += 0.2; inflation += 0.1 if budget < 0; economic_growth += 0.2; economic_growth += 0.1 if economic_growth < 0; unemployment -= 0.3; unemployment -= 0.1 if unemployment >= 8;
 go-to: ldr_promise_vonc if ldr_promise_failed == 1
 
-We have increased financial support for small farmers, providing aid through credit and insurance. The left and maximalists are unsurprisingly opposed to our policies, seeing them as handouts to petite-bourgeois farmers.
+We have increased financial support for small farmers, providing aid through credit and insurance. The <span style="color: [+ communist_colour +];">**left**</span> and the <span style="color: [+ maximalist_colour +];">**maximalists**</span> are unsurprisingly opposed to our policies, seeing them as handouts to petite-bourgeois farmers.
 
-[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the Liberals, and their representatives have already requested a meeting with us. ?]
+[? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color: [+ ldr_colour +];">*liberals*</span>, and their representatives have already requested a meeting with us. ?]
 
