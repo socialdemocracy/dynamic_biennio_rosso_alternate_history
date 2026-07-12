@@ -11,10 +11,10 @@ tags: govt_affairs
 
 With control of the Agricultural Ministry in the hands of the <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>, it seems there is much work to be done in regards to reform. Many in the party are calling for land seizures, and some of our rural voters are requesting aid and financing to help in relieving their economic burden. What do we do?
  
-- @support_coops: Help establish agricultural cooperatives
-- @support_coops_2: Continue our policy of supporting agricultural cooperatives
-- @land_seize: Enact a land seizure program
-- @agricultural_finance: Increase the financing of agricultural programs
+- @support_coops: Help establish agricultural cooperatives.
+- @support_coops_2: Continue our policy of supporting agricultural cooperatives.
+- @land_seize: Enact a land seizure program.
+- @agricultural_finance: Increase the financing of agricultural programs.
 - @root: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
