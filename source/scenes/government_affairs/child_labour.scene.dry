@@ -137,6 +137,6 @@ Many in our party are disgusted about this, and general dissent has risen.
 choose-if: labour_minister_party = psi_name
 view-if: child_welfare == 0
 subtitle: +2 Budget
-on-arrival: child_welfare_dismantled == 1; budget += 2; child_safety -= 2; labour_dissent += 5; syndicalist_dissent += 3; communist_dissent += 4; maximalist_dissent += 2; reformist_dissent -= 1; labour_strength -= 3; workers_psi -= 4*(1-dissent) if not in_unstable_coalition; workers_clc -= 4*(1-dissent) if centre_left_coalition; workers_scc -= 4*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 3; socialist_sentiment -= 5
+on-arrival: child_welfare_dismantled = 1; budget += 2; child_safety -= 2; labour_dissent += 5; syndicalist_dissent += 3; communist_dissent += 4; maximalist_dissent += 2; reformist_dissent -= 1; labour_strength -= 3; workers_psi -= 4*(1-dissent) if not in_unstable_coalition; workers_clc -= 4*(1-dissent) if centre_left_coalition; workers_scc -= 4*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 3; socialist_sentiment -= 5
 
 All the wings to the left of the <span style="color: [+ reformist_colour +];">**reformist**</span> wing are disgusted, and generally, dissent has overwhelmed many of our local conferences, with many even speaking agaisnt the party itself..
