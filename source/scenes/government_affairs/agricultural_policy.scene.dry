@@ -14,6 +14,9 @@ With control of the Agricultural Ministry in the hands of the <span style="color
 - @support_coops: Help establish agricultural cooperatives.
 - @support_coops_2: Continue our policy of supporting agricultural cooperatives.
 - @land_seize: Enact a land seizure program.
+- @land_reform_legal: Enact a legal land reform program.
+- @pro_consumer: Begin a policy of food procurement.
+- @state_buyer: Create a state monopoly for grain purchases.
 - @agricultural_finance: Increase the financing of agricultural programs.
 - @root: Do not enact any policies for now.
 - @easy_discard
@@ -105,3 +108,79 @@ We have increased financial support for small farmers, providing aid through cre
 
 [? if ldr_promise_failed : Unfortunately, increasing funding has led us to enter a deficit, breaking our agreement with the <span style="color: [+ ldr_colour +];">*liberals*</span>, and their representatives have already requested a meeting with us. ?]
 
+@land_reform_legal
+subtitle: -1 budget - Break up the large aristocratic estates and give land to landless peasants. [? if liberal_reform_accepted : This will break our agreement with the <span style="color: [+ ldr_colour +];">**liberals**</span>! ?]
+unavailable-subtitle: [? if budget <= 0 : Not enough budget. (Need 1) ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
+choose-if: judicial_reform >= 2 and budget > 0
+on-arrival: {!
+Q.land_seizures += 1;
+Q.agricultural_policy += 1;
+
+if (Q.centre_left_coalition == 1) {
+    Q.coalition_dissent += 1;
+}
+
+if (Q.in_unstable_coalition == 0) {
+    Q.rural_psi += 3*(1-Q.dissent);
+    Q.middle_class_psi -= 2*(1-Q.dissent);
+}
+
+if (Q.centre_left_coalition == 1) {
+    Q.rural_clc += 3*(1-Q.dissent);
+    Q.middle_class_clc -= 2*(1-Q.dissent);
+}
+
+if (Q.socialist_catholic_coalition == 1) {
+    Q.rural_scc += 3*(1-Q.dissent);
+    Q.middle_class_scc -= 2*(1-Q.dissent);
+}
+
+Q.rural_pnf -= 2*(1-Q.dissent);
+Q.middle_class_pnf += 1*(1-Q.dissent);
+
+Q.unemployment -= 0.1;
+
+if (Q.unemployment >= 8) {
+    Q.unemployment -= 0.1
+}
+
+Q.economic_growth += 0.1;
+
+if (Q.economic_growth < 0) {
+    Q.economic_growth += 0.1;
+}
+
+Q.ldr_relation -= 5; 
+Q.ul_relation -= 4; 
+Q.communist_strength += 8; 
+Q.communist_dissent -= 5; 
+Q.agricultural_policy += 1; 
+if (Q.liberal_reform_accepted == 1) {
+    Q.ldr_promise_failed = 1;
+}
+Q.industrialists_pnf += 3; 
+Q.psri_relation += 3*(1-Q.dissent);
+!}
+go-to: ldr_promise_vonc if ldr_promise_failed == 1
+max-visits: 3
+
+With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, focusing on the northern and  central regions.
+
+[? if ldr_promise_failed : Unfortunately, our land reform has led us to break our agreement with the <span style="color: [+ ldr_colour +];">*liberals*</span>, and their representatives have already requested a meeting with us. ?]
+
+@pro_consumer
+subtitle: -1 budget - Provide inexpensive food for working peasants.
+unavailable-subtitle: Not enough budget. (Need 1)
+choose-if: budget >= 1
+on-arrival: budget -= 1; workers_psi += 4*(1-dissent); unemployed_psi += 4*(1-dissent); workers_scc += 4; coalition_dissent += 1; economic_growth += 1
+
+We have increased state purchasing of food staples to provide to rural working peasants, workers, and the poor. This benefits workers more than it benefits farmers, as we are negotiating for lower purchase prices.
+
+@state_buyer
+subtitle: -2 budget - This guarantees prices for farmers and stable prices for consumers.
+unavailable-subtitle: [? if judicial_reform < 2 : The judiciary would never allow this. ?]
+choose-if: budget >= 2 and judicial_reform >= 2
+on-arrival: budget -= 2; rural_psi += 5*(1-dissent); rural_pnf -= 3*(1-dissent); workers_psi += 4*(1-dissent); unemployed_psi += 5*(1-dissent); coalition_dissent += 1; ul_relation -= 5; ldr_relation -= 4; ppi_relation -= 3; capital_strike_progress += 1; economic_growth += 0.4
+max-visits: 1
+
+Our new purchasing agency guarantees fair prices for farmers, while also providing lower food prices for workers and the urban poor. This policy necessitates heavy spending and an unprecedented level of state intervention in the economy, raising the ire of conservative economists.
