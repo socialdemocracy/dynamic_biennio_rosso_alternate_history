@@ -126,17 +126,17 @@ With the support of the left including the <span style="color: [+ psri_colour +]
 [? if child_welfare < 3 : Unfortunately, the bill has seemingly backfired, as the new ban on child labour has forced many into further poverty due to a lowered income. ?]
 
 @i_hate_children
-choose-if: child_welfare >= -1
 subtitle: +1 Budget
-unavailable-subtitle: There is no child welfare left to relax.
-on-arrival: budget += 1; child_safety -= 1; labour_dissent += 2; syndicalist_dissent += 2; communist_dissent += 2; maximalist_dissent += 1; reformist_dissent -= 3; labour_strength -= 2; workers_psi -= 3*(1-dissent) if not in_unstable_coalition; workers_clc -= 3*(1-dissent) if centre_left_coalition; workers_scc -= 3*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 2 if child_safety <= 3 ; socialist_sentiment -= 2 if child_safety <= 3;
+unavailable-subtitle: There is nothing left to cut.
+choose-if: child_welfare >= -5
+on-arrival: budget += 1; workers_psi -= 6; unemployed_psi -= 6; workers_pnf += 3; child_welfare -= 1; reformist_dissent += 10; communist_dissent += 10; labour_dissent += 10; maximalist_dissent += 5; ldr_relation += 5; ul_relation += 2; ds_relation += 3; ppi_relation += 3; coalition_dissent -= 1; pcdi_relation -= 8; inflation -= 0.3; economic_growth -= 0.5
 
 Many in our party are disgusted about this, and general dissent has risen.
 
 @im_a_children_hater_2
-choose-if: child_welfare < 1
+choose-if: child_welfare <= 0
 subtitle: +2 Budget
 unavailable-subtitle: Why?
-on-arrival: child_welfare_dismantled = 1; budget += 2; child_safety -= 2; labour_dissent += 2; syndicalist_dissent += 2; communist_dissent += 2; maximalist_dissent += 2; reformist_dissent -= 1; labour_strength -= 3; workers_psi -= 4*(1-dissent) if not in_unstable_coalition; workers_clc -= 4*(1-dissent) if centre_left_coalition; workers_scc -= 4*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 3; socialist_sentiment -= 5
+on-arrival: child_welfare_dismantled = 1; budget += 2; child_safety -= 2; labour_dissent += 2; syndicalist_dissent += 2; communist_dissent += 2; maximalist_dissent += 2; reformist_dissent -= 2; labour_strength -= 3; workers_psi -= 4*(1-dissent) if not in_unstable_coalition; workers_clc -= 4*(1-dissent) if centre_left_coalition; workers_scc -= 4*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 3; socialist_sentiment -= 5
 
 All the wings to the left of the <span style="color: [+ reformist_colour +];">**reformist**</span> wing are disgusted, and generally, dissent has overwhelmed many of our local conferences, with many even speaking agaisnt the party itself..
