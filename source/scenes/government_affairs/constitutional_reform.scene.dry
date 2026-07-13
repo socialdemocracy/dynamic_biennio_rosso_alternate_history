@@ -7,12 +7,13 @@ on-arrival: week_actions += 1; constitutional_reform_timer = 5
 card-image: img/portraits/VitorioEmanuel.jpg
 go-to: reforms_menu
 tags: govt_affairs
+face-image: img/statuto_albertino.jpg
 
 # cosmetic stuff for now, except the veto thing
 
 = Constitutional Reform
 
-The Statuto Albertino, the constitution of the current Kingdom of Italy and the Kingdom of Sardinia preceding it, has often been changed to keep up with modern times. The 1919 amendment to give all men the right to vote and alter the electoral system to a proportional representation system are the most recent examples.
+The Statuto Albertino, the constitution of the current <span style="color: #008C45;">**Kingd**</span><span style="color: #E5E4E2;">**om of I**</span><span style="color: #CD212A;">**taly**</span> and the <span style="color: #D10008;">**Kingd**</span><span style="color: #E5E4E2;">**om of Sa**</span><span style="color: #0031A5;">**rdinia**</span> preceding it, has often been changed to keep up with modern times. The 1919 amendment to give all men the right to vote and alter the electoral system to a proportional representation system are the most recent examples.
 
 Now that we control a sizeable bloc in the Chamber of Deputies, we are able to alter the Statuto Albertino as well. We will need an absolute majority of the Chamber of Deputies as well as the approval of the Senate and the King to pass any reforms. 
 
@@ -30,36 +31,36 @@ Now that we control a sizeable bloc in the Chamber of Deputies, we are able to a
 subtitle: Remove the appointed Senate's ability to reject bills.
 view-if: (centre_left_coalition_r > 50 or socialist_catholic_coalition_r > 50 or left_wing_coalition_r >= 50) and veto_removed = 0
 choose-if: king_relation > 70
-unavailable-subtitle: The King & Senate would not approve this.
+unavailable-subtitle: The <span style="color: [+ i_colour +];">**King**</span> & Senate would not approve of this.
 on-arrival: veto_removed = 1; fasci_coup_progress += 1; democratisation += 2; republican_sentiment += 4*democratisation; socialist_sentiment += 3
 achievement: riforma_costituzionale
 
-The Constitutional Amendment makes it to the King, who is convinced to approve the measure, limiting the powers of the Senate and further democratising the Kingdom.
+The Constitutional Amendment makes it to the <span style="color: [+ i_colour +];">**king**</span>, who is convinced to approve the measure, limiting the powers of the Senate and further democratising the Kingdom.
 
 @article_65
 subtitle: Make the Prime Minister choose and appoint his own ministers.
 view-if: (centre_left_coalition_r > 50 or socialist_catholic_coalition_r > 50 or left_wing_coalition_r >= 50) and veto_removed = 1 and pm_appointed = 0
 choose-if: king_relation > 70
-unavailable-subtitle: The King & Senate would not approve this.
+unavailable-subtitle: The <span style="color: [+ i_colour +];">**King**</span> & Senate would not approve of this.
 on-arrival: fasci_coup_progress += 1; democratisation += 2; pm_appointed = 1; republican_sentiment += 4*democratisation; socialist_sentiment += 4;
 
-The Constitutional Amendment makes it to the King, who is convinced to approve the measure, limiting his own powers and further democratising the Kingdom.
+The Constitutional Amendment makes it to the <span style="color: [+ i_colour +];">**king**</span>, who is convinced to approve the measure, limiting his own powers and further democratising the Kingdom.
 
 @article_33_2
-subtitle: Remove the King's ability to veto bills.
+subtitle: Remove the <span style="color: [+ i_colour +];">**king**</span>'s ability to veto bills.
 view-if: (centre_left_coalition_r > 50 or socialist_catholic_coalition_r > 50 or left_wing_coalition_r >= 50) and pm_appointed = 1 and king_veto_removed = 0
 choose-if: king_relation > 80
-unavailable-subtitle: The King & Senate would not approve this.
+unavailable-subtitle: The <span style="color: [+ i_colour +];">**King**</span> & Senate would not approve of this.
 on-arrival: fasci_coup_progress += 2; democratisation += 2; king_veto_removed = 1; republican_sentiment += 4*democratisation; socialist_sentiment += 2
 
-The Constitutional Amendment makes it to the King, who is convinced to approve the measure, limiting his own powers and further democratising the Kingdom.
+The Constitutional Amendment makes it to the <span style="color: [+ i_colour +];">**king**</span>, who is convinced to approve the measure, limiting his own powers and further democratising the Kingdom.
 
 @constitution_removal
 view-if: (centre_left_coalition_r > 50 or socialist_catholic_coalition_r > 50 or left_wing_coalition_r >= 50) and king_veto_removed = 1
 choose-if: king_relation >= 85 and return_to_normalcy
-unavailable-subtitle: [? if king_relation >= 85 : The King would not approve this. ?][? if not return_to_normalcy : It is too turbulent of a time to present this. Perhaps it would be better upon a return to normalcy. ?]
+unavailable-subtitle: [? if king_relation >= 85 : The <span style="color: [+ i_colour +];">**King**</span> would not approve this. ?][? if not return_to_normalcy : It is too turbulent of a time to present this. Perhaps it would be better upon a return to normalcy. ?]
 on-arrival: king = "N/A"; monarchy_gone = 1; socialist_sentiment += 9
 
-The reform passes with the slightest of margins, removing the Statuto Albertino as the constitution of the Kingdom of Italy. A new constitutional congress is to be held in the coming weeks as the King officially abdicates the throne.
+The reform passes with the slightest of margins, removing the Statuto Albertino as the constitution of the <span style="color: #008C45;">**Kingd**</span><span style="color: #E5E4E2;">**om of I**</span><span style="color: #CD212A;">**taly**</span>. A new constitutional congress is to be held in the coming weeks as the <span style="color: [+ i_colour +];">**king**</span> officially abdicates the throne.
 
 - @post_war_peaceful: It is time to decide our new agenda.
