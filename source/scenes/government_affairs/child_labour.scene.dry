@@ -1,7 +1,7 @@
 title: Child Labour
 new-page: true
 is-card: true
-view-if: psi_in_government and child_labour_timer <= 0 and child_labour_laws != 1
+view-if: psi_in_government and child_labour_timer <= 0 and child_labour_laws != 1 and child_welfare_dismantled != 1
 on-arrival: week_actions += 1; child_labour_timer = 3; labour_law_support = left_wing_coalition_r; 
 card-image: img/portraits/PalmiroTogliatti.jpg
 tags: govt_affairs
@@ -16,6 +16,7 @@ Child labour is rampant throughout <span style="color: #008C45;">**It**</span><s
 - @child_safety: Develop and enforce safety regulation.
 - @education_attendance: Enforce and pass compulsory education laws.
 - @i_hate_children: Our economic situation forces us to relax child welfare.
+- @im_a_children_hater_2: It would be better to dismantle the whole welfare system now.
 - @child_welfare: Improve welfare for poor families with children.
 - @child_ban: Attempt to raise the minimum working age to 16.
 - @return: Do not enact any policies for now.
@@ -131,3 +132,11 @@ unavailable-subtitle: [? if child_welfare == 0: There is no child welfare left t
 on-arrival: budget += 1; child_safety -= 1; labour_dissent += 3; syndicalist_dissent += 2; communist_dissent += 2; maximalist_dissent += 1; reformist_dissent -= 3; labour_strength -= 2; workers_psi -= 3*(1-dissent) if not in_unstable_coalition; workers_clc -= 3*(1-dissent) if centre_left_coalition; workers_scc -= 3*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 2 if child_safety <= 3 ; socialist_sentiment -= 2 if child_safety <= 3;
 
 Many in our party are disgusted about this, and general dissent has risen.
+
+@im_a_children_hater_2
+choose-if: labour_minister_party = psi_name
+view-if: child_welfare == 0
+subtitle: +2 Budget
+on-arrival: child_welfare_dismantled == 1; budget += 2; child_safety -= 2; labour_dissent += 5; syndicalist_dissent += 3; communist_dissent += 4; maximalist_dissent += 2; reformist_dissent -= 1; labour_strength -= 3; workers_psi -= 4*(1-dissent) if not in_unstable_coalition; workers_clc -= 4*(1-dissent) if centre_left_coalition; workers_scc -= 4*(1-dissent) if socialist_catholic_coalition; capital_strike_progress -= 3; socialist_sentiment -= 5
+
+All the wings to the left of the <span style="color: [+ reformist_colour +];">**reformist**</span> wing are disgusted, and generally, dissent has overwhelmed many of our local conferences, with many even speaking agaisnt the party itself..
