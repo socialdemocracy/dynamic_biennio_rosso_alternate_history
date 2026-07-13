@@ -375,12 +375,12 @@ a.card {
   width: 120px;
   height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--card-border-color);
+  border: 5px solid var(--card-border-color);
   margin-bottom: 0.5em;
   position: relative;
 }
 a.card:hover {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   left: -5px;
   top: -5px;
 }
@@ -389,7 +389,7 @@ div.blank-card {
   width: 120px;
   height: 150px;
   background-color: var(--card-bg-color);
-  border: 1px solid var(--card-border-color);
+  border: 5px solid var(--card-border-color);
   margin-bottom: 0.5em;
 }
 
@@ -442,7 +442,7 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
 .face-figure {
   /*vertical-align: top;*/
   display: inline-block;
-  border: 1px solid var(--card-border-color);
+  border: 5px solid var(--card-border-color);
   float: left;
   max-width: 35%;
   /*max-height: 180px;*/
@@ -551,14 +551,14 @@ img {
   a.card {
     width: 100px;
     height: 125px;
-    border: 8px solid var(--card-border-color);
+    border: 5px solid var(--card-border-color);
     margin-bottom: 0.5em;
     position: relative;
   }
   div.blank-card {
     width: 100px;
     height: 125px;
-    border: 1px solid var(--card-border-color);
+    border: 5px solid var(--card-border-color);
     margin-bottom: 0.5em;
   }
   .card-in-hand, .pinned-card, .deck {
