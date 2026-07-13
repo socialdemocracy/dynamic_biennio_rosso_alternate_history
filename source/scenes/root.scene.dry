@@ -563,6 +563,7 @@ Q.education_reformed = 0;
 // child labour 
 Q.child_safety = 0;
 Q.child_attendance = 0;
+Q.child_welfare_dismantled = 0;
 Q.child_labour_laws = 0;
 Q.child_welfare = 0; 
 
