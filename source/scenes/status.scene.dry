@@ -192,15 +192,15 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Legality
 
-[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if fdc_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">**operating**</span>?][? if fdc_banned : <span style="color: #66BB6A;">**banned**</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #FFF200;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if ard_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">**operating**</span>?][? if ard_banned : <span style="color: #66BB6A;">**banned**</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : Anti-<span style="color: #700000;">**Bolshevik**</span> Leagues: [? if not abl_banned : <span style="color: #d42f2f;">**Operating**</span>?][? if abl_banned : <span style="color: #A8D5BA;">**Banned**</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">**operating**</span>?][? if abl_banned : <span style="color: #66BB6A;">**banned**</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #A8D5BA;">**Operating**</span> ?][? if rg_banned : <span style="color: #d42f2f;">**Banned**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">**operating**</span> ?][? if rg_banned : <span style="color: #d42f2f;">**banned**</span> ?] ?]
 
-[? if arditi_formed : <span style="color: #FFF200;">**Arditi del Popolo**</span>: <span style="color: #A8D5BA;">**Operating**</span> ?]
+[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">**operating**</span> ?]
 
 = Paramilitary Forces
 
@@ -216,43 +216,43 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 [? if not national_congress_seen and pcdi_formed : <span style="color: [+ reformist_colour +];">**Red Guards - PSI**</span> Militarization: [+ rg_militancy : militancy +] ?]
 
-[? if arditi_formed : <span style="color: #FFF200;">**Arditi del Popolo**</span> Strength: [+ adp_strength_2 +] thousand ?]
+[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span> Strength: [+ adp_strength_2 +] thousand ?]
 
-[? if arditi_formed: <span style="color: #FFF200;">**Arditi del Popolo**</span> Militarization: [+ adp_militancy : militancy +] ?]
+[? if arditi_formed: <span style="color: #dddddd;">**Arditi del Popolo**</span> Militarization: [+ adp_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Fasci is a right-wing organisation of war veterans associated with the PNF.">Fasci</span>!} Strength: [+ fdc_strength_2 +] thousand ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span> Strength: [+ fdc_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Fasci Militarization: [+ fdc_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span> Militarization: [+ fdc_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Arditismo are an organisation associated with the Fasci, comprised of former members of the 'Arditi' in the Italian Army.">Arditismo</span>!} Strength: [+ ard_strength_2 +] thousand ?]
+[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span> Strength: [+ ard_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Arditismo Militarization: [+ ard_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span> Militarization: [+ ard_militancy : militancy +] ?]
 
-[? if not national_congress_seen : {!<span class="tooltip-text" title="The Anti-Bolshevik Leagues are local organisations across Italy formed to combat socialist ideologies, funded by landowners and industrialists. ">Anti-Bolshevik Leagues</span>!} Strength: [+ abl_strength_2 +] thousand ?]
+[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span> Strength: [+ abl_strength_2 +] thousand ?]
 
-[? if not national_congress_seen : Anti-Bolshevik Leagues Militarization: [+ abl_militancy : militancy +] ?]
+[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span> Militarization: [+ abl_militancy : militancy +] ?]
 
-[? if communist_terror : {!<span class="tooltip-text" title="The new Red Guards are a radical paramilitary group asscoiated with the PCd'I.">New Red Guards</span>!} ?]
+[? if communist_terror : <span style="color: [+ communist_colour +];">**New Red Guards**</span> ?]
 
-[? if communist_terror: NRG Attack Likelihood : [+ communist_bomb_display : warnings +] ?]
+[? if communist_terror: <span style="color: [+ communist_colour +];">**NRG**</span> Attack Likelihood : [+ communist_bomb_display : warnings +] ?]
 
-[? if republican_terror : {!<span class="tooltip-text" title="The Anti-Communist Brigades are a republican paramilitary group asscoiated with the former liberal parties.">Anti-Communist Brigades</span>!} ?]
+[? if republican_terror : <span style="color: #240606;">**Anti-Communist Brigades**</span> ?]
 
-[? if republican_terror: ACB Attack Likelihood : [+ republican_bomb_display : warnings +] ?]
+[? if republican_terror: <span style="color: #240606;">**ACB**</span> Attack Likelihood : [+ republican_bomb_display : warnings +] ?]
 
-[? if fascist_terror : {!<span class="tooltip-text" title="The new Fasci are a radical paramilitary group asscoiated with the former PNF..">Fasci</span>!} ?]
+[? if fascist_terror : <span style="color: [+ pnf_colour +];">**Fasci**</span> ?]
 
-[? if fascist_terror: FdC Attack Likelihood : [+ fascist_bomb_display : warnings +] ?]
+[? if fascist_terror: <span style="color: [+ pnf_colour +];">**FdC**</span> Attack Likelihood : [+ fascist_bomb_display : warnings +] ?]
 
 = Government Forces
 
-[? if not national_congress_seen : Regio Esercito: ?][? if national_congress_seen : Esercito Italiano: ?] [+ army_strength +] thousand troops.
+[? if not national_congress_seen : <span style="color: #808080;">**Regio Esercito**</span>: ?][? if national_congress_seen : <span style="color: #808080;">**Esercito Italiano**</span>: ?] [+ army_strength +] thousand troops.
 
-[? if not national_congress_seen : Regio Esercito Loyalty: ?][? if national_congress_seen : Esercito Italiano Loyalty: ?] [+ army_loyalty : loyalty +]
+[? if not national_congress_seen : <span style="color: #808080;">**Regio Esercito**</span> Loyalty: ?][? if national_congress_seen : <span style="color: #808080;">**Esercito Italiano**</span> Loyalty: ?] [+ army_loyalty : loyalty +]
 
-[? if psi_in_government : Carabinieri: [+ interior_police_strength +] thousand officers ?]
+[? if psi_in_government : <span style="color: #808080;">**Carabinieri**</span>: [+ interior_police_strength +] thousand officers ?]
 
-[? if psi_in_government : Carabinieri Loyalty: [+ interior_police_loyalty: loyalty +] ?]
+[? if psi_in_government : <span style="color: #808080;">**Carabinieri**</span> Loyalty: [+ interior_police_loyalty: loyalty +] ?]
 
 @polls
 on-arrival: {!
