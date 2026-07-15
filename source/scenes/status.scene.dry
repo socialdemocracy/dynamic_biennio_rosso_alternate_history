@@ -267,7 +267,7 @@ Q.nationalist_sentiment_disp = Math.round(Q.nationalist_sentiment);
 
 <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ psi_votes +]%
 
-<span style="color: [+ pcdi_colour +];">**PCd'I**</span>: [+ pcdi_votes +]% ?]
+[? if pcdi_formed : <span style="color: [+ pcdi_colour +];">**PCd'I**</span>: [+ pcdi_votes +]% ?]
 
 [? if psu_formed : <span style="color: [+ psu_colour +];">**PSU**</span>: [+ psu_votes +]% ?]
 
