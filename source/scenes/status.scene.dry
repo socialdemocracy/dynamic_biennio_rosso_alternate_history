@@ -297,9 +297,9 @@ Q.nationalist_sentiment_disp = Math.round(Q.nationalist_sentiment);
 
 Support for Democracy: [+ republican_sentiment_disp +]%
 
-Support for Socialism: [+ socialist_sentiment_disp +]%
+Support for <span style="color: #9B0000;">**Socialism**</span>: [+ socialist_sentiment_disp +]%
 
-Support for Nationalism: [+ nationalist_sentiment_disp +]%
+Support for <span style="color: [+ pnf_colour +];">**Nationalism**</span>: [+ nationalist_sentiment_disp +]%
 
 **Detailed results for each demographic**
 
