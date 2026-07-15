@@ -23,12 +23,12 @@ Party: [+ resources +]
 
 Paramilitary: [+ para_resources +]
 
-<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> Position: [? if psi_in_government : In Government - ?][? if psi_in_government == 0 : Opposition ?]
+<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> position: [? if psi_in_government : in government - ?][? if psi_in_government == 0 : opposition ?]
 [? if centre_left_coalition and psi_in_government: <span style="color: [+ ul_colour +];">**Center**</span>-<span style="color: [+ psi_colour +];">**Left**</span> Coalition ?][? if psi_majority and psi_in_government: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span> majority ?][? if socialist_catholic_coalition and psi_in_government: <span style="color: [+ ppi_colour +];">**Catholic**</span>-<span style="color: [+ psi_colour +];">**Socialist**</span> Coalition ?][? if left_wing_coalition and psi_in_government: <span style="color: [+ psi_colour +];">**Left**</span>-<span style="color: [+ psri_colour +];">**Wing**</span> Coalition ?]
 
-[? if psi_in_government and not psi_majority: Coalition Dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if psi_in_government and not psi_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-Internal Dissent: [+ dissent_percent : dissent +]
+Internal dissent: [+ dissent_percent : dissent +]
 
 <span style="color: #693232;">**Revolutionary Fervour**</span>: [+ revolutionary_fervour +]%
 
@@ -116,9 +116,9 @@ Economic Growth: [+ economic_growth_2 +]%
 
 Unemployment: [+ unemployment_2 +]%
 
-<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">**Significant**</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">**Amortisation Plan**</span> ?] [? if in_default : <span style="color: #A8D5BA;">**Defaulted**</span> ?]
+<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">significant</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">defaulted</span> ?]
 
-<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">**Significant**</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">**Amortisation Plan**</span> ?] [? if in_default : <span style="color: #A8D5BA;">**Defaulted**</span> ?]
+<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">significant</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">defaulted</span> ?]
 
 @politics
 
@@ -192,15 +192,15 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Legality
 
-[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">**operating**</span>?][? if fdc_banned : <span style="color: #66BB6A;">**banned**</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">operating</span>?][? if fdc_banned : <span style="color: #66BB6A;">banned</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">**operating**</span>?][? if ard_banned : <span style="color: #66BB6A;">**banned**</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">operating</span>?][? if ard_banned : <span style="color: #66BB6A;">banned</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">**operating**</span>?][? if abl_banned : <span style="color: #66BB6A;">**banned**</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">**Under Attack**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">operating</span>?][? if abl_banned : <span style="color: #66BB6A;">banned</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">**operating**</span> ?][? if rg_banned : <span style="color: #d42f2f;">**banned**</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">operating</span> ?][? if rg_banned : <span style="color: #d42f2f;">banned</span> ?] ?]
 
-[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">**operating**</span> ?]
+[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">operating</span> ?]
 
 = Paramilitary Forces
 
@@ -265,31 +265,31 @@ Q.nationalist_sentiment_disp = Math.round(Q.nationalist_sentiment);
 
 (if the election were to be held now):
 
-[+ psi_name +]: [+ psi_votes +]%
+<span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ psi_votes +]%
 
-[? if pcdi_formed : PCd'I: [+ pcdi_votes +]% ?]
+<span style="color: [+ pcdi_colour +];">**PCd'I**</span>: [+ pcdi_votes +]% ?]
 
-[? if psu_formed : PSU: [+ psu_votes +]% ?]
+[? if psu_formed : <span style="color: [+ psu_colour +];">**PSU**</span>: [+ psu_votes +]% ?]
 
-[? if not psri_collapse : PSRI : [+ psri_votes +]% ?]
+[? if not psri_collapse : <span style="color: [+ psri_colour +];">**PSRI**</span>: [+ psri_votes +]% ?]
 
-[? if pll_formed : PLL: [+ pll_votes +]% ?]
+[? if pll_formed : <span style="color: [+ pll_colour +];">**PLL**</span>: [+ pll_votes +]% ?]
 
-[? if pri_prominent = 1: PRI: [+ pri_votes +]% ?]
+[? if pri_prominent = 1: <span style="color: [+ pri_colour +];">**PRI**</span>: [+ pri_votes +]% ?]
 
-[+ ds_name +]: [+ ds_votes +]%
+<span style="color: [+ ds_colour +];">**[+ ds_name +]**</span>: [+ ds_votes +]%
 
-PPI: [+ ppi_votes +]%
+<span style="color: [+ ppi_colour +];">**PPI**</span>: [+ ppi_votes +]%
 
-[+ ldr_name +]: [+ ldr_votes +]% 
+<span style="color: [+ ldr_colour +];">**[+ ldr_name +]**</span>: [+ ldr_votes +]% 
 
-[+ ul_name +]: [+ ul_votes +]%
+<span style="color: [+ ul_colour +];">**[+ ul_name +]**</span>: [+ ul_votes +]%
 
-[? if pcs_formed : PCS: [+ pcs_votes +]% ?]
+[? if pcs_formed : <span style="color: [+ pcs_colour +];">**PCS**</span>: [+ pcs_votes +]% ?]
 
-[+ pnf_name +]: [+ pnf_votes +]%
+<span style="color: [+ pnf_colour +];">**[+ pnf_name +]**</span>: [+ pnf_votes +]%
 
-Others: [+ other_votes +]%
+<span style="color: #808080;">**Others**</span>: [+ other_votes +]%
 
 = Public Opinion
 
