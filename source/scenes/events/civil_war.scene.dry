@@ -1,6 +1,6 @@
 title: Civil War
 new-page: true
-audio: clear music/civil_war/Canzone dei partigiani reggiani - Italian Partisan Song (The Red Army is the Strongest in Italian).mp3
+audio: clear music/civil_war/red_army_strongest_italian.mp3
 on-arrival: {!
 Q.rg_strength = Math.round(Q.rg_strength);
 Q.adp_strength = Math.round(Q.adp_strength);
