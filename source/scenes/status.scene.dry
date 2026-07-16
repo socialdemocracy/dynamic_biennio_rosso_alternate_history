@@ -116,9 +116,9 @@ Economic Growth: [+ economic_growth_2 +]%
 
 Unemployment: [+ unemployment_2 +]%
 
-<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">significant</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">defaulted</span> ?]
+<span style="color: #C8102E;">**British**</span> Debts: [? if uk_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if uk_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
 
-<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">significant</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">defaulted</span> ?]
+<span style="color: #B31942;">**Amer**</span><span style="color: #0A3161;">**ican**</span> Debts: [? if american_debts > 0 and not in_default : <span style="color: #d42f2f;">Significant</span> ?] [? if us_debts_over and not in_default : <span style="color: #EBD97D;">Amortisation Plan</span> ?] [? if in_default : <span style="color: #66BB6A;">Defaulted</span> ?]
 
 @politics
 
@@ -194,15 +194,15 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 = Legality
 
-[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">operating</span>?][? if fdc_banned : <span style="color: #66BB6A;">banned</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
+[? if not national_congress_seen : <span style="color: [+ pnf_colour +];">**Fasci**</span>: [? if not fdc_banned : <span style="color: #d42f2f;">Operating</span>?][? if fdc_banned : <span style="color: #66BB6A;">Banned</span>?][? if fasci_adp_active or fasci_rg_active : <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">operating</span>?][? if ard_banned : <span style="color: #66BB6A;">banned</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #b5aeae;">**Arditismo**</span>: [? if not ard_banned : <span style="color: #d42f2f;">Operating</span>?][? if ard_banned : <span style="color: #66BB6A;">Banned</span>?][? if arditi_adp_active or arditi_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">operating</span>?][? if abl_banned : <span style="color: #66BB6A;">banned</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">Operating</span>?][? if abl_banned : <span style="color: #66BB6A;">Banned</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">operating</span> ?][? if rg_banned : <span style="color: #d42f2f;">banned</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">Operating</span> ?][? if rg_banned : <span style="color: #d42f2f;">Banned</span> ?] ?]
 
-[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">operating</span> ?]
+[? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">Operating</span> ?]
 
 = Paramilitary Forces
 
