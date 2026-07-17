@@ -321,7 +321,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 <span style="color: #FFF200;">**Holy**</span> <span style="color: #dddddd;">**See**</span>: [+ papal_relation : radicalisation +]
 
-<span style="color: #002654;">Ente</span> <span style="color: #D7141A;">nte</span>: [+ entente_relation : radicalisation +]
+<span style="color: #002654;">**Ente**</span><span style="color: #D7141A;">**nte**</span>: [+ entente_relation : radicalisation +]
 
 <span style="color: #B31942;">**United Sta**</span><span style="color: #0A3161;">**tes of America**</span>: [+ american_relation : radicalisation +]
 
