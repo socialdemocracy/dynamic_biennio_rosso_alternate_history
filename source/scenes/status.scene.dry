@@ -321,21 +321,21 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = Foreign Relations
 
-Holy See: [+ papal_relation : radicalisation +]
+<span style="color: #FFF200;">**Holy**</span><span style="color: #dddddd;">**See**</span>: [+ papal_relation : radicalisation +]
 
-Entente: [+ entente_relation : radicalisation +]
+<span style="color: #002654;">Ente</span> <span style="color: #D7141A;">nte</span>: [+ entente_relation : radicalisation +]
 
-United States: [+ american_relation : radicalisation +]
+<span style="color: #B31942;">**United Sta**</span><span style="color: #0A3161;">**tes of America**</span>: [+ american_relation : radicalisation +]
 
-Russian SFSR: [+ soviet_relation : radicalisation +]
+<span style="color: #750e0e;">**Russian Soviet Federative Socialist Republic**</span>: [+ soviet_relation : radicalisation +]
 
-Yugoslavia: [+ balkan_relation : radicalisation +]
+<span style="color: #003893;">**Yug**</span><span style="color: #dddddd;">**osla**</span><span style="color: #DD0000;">**via**</span>: [+ balkan_relation : radicalisation +]
 
 = International Situations
 
-Russian Civil War: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : Soviet Victory ?]
+<span style="color: #750e0e;">**Russian**</span> Civil War: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="color: #750e0e;">**Soviet**</span> Victory ?]
 
-Fiume: [? if not resolved_adriatic : Negotiating ?][? if fiume_free : Free City ?][? if fiume_italian : Italian ?]
+Fiume: [? if not resolved_adriatic : Negotiating ?][? if fiume_free : Free City ?][? if fiume_italian : <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**al**</span><span style="color: #CD212A;">**ian**</span> ?]
 
 Adriatic Question: [? if resolved_adriatic : Complete ?][? if not resolved_adriatic : Negotiating ?]
 
