@@ -321,7 +321,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = Foreign Relations
 
-<span style="color: #FFF200;">**Holy**</span><span style="color: #dddddd;">**See**</span>: [+ papal_relation : radicalisation +]
+<span style="color: #FFF200;">**Holy**</span> <span style="color: #dddddd;">**See**</span>: [+ papal_relation : radicalisation +]
 
 <span style="color: #002654;">Ente</span> <span style="color: #D7141A;">nte</span>: [+ entente_relation : radicalisation +]
 
@@ -333,13 +333,13 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = International Situations
 
-<span style="color: #750e0e;">**Russian**</span> Civil War: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="color: #750e0e;">**Soviet**</span> Victory ?]
+<span style="color: #750e0e;">**Russian**</span> **Civil War**: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="color: #750e0e;">**Soviet**</span> Victory ?]
 
-Fiume: [? if not resolved_adriatic : Negotiating ?][? if fiume_free : Free City ?][? if fiume_italian : <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**al**</span><span style="color: #CD212A;">**ian**</span> ?]
+**Fiume**: [? if not resolved_adriatic : Negotiating ?][? if fiume_free : Free City ?][? if fiume_italian : <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**al**</span><span style="color: #CD212A;">**ian**</span> ?]
 
-Adriatic Question: [? if resolved_adriatic : Complete ?][? if not resolved_adriatic : Negotiating ?]
+**Adriatic Question**: [? if resolved_adriatic : Complete ?][? if not resolved_adriatic : Negotiating ?]
 
-Roman Question: [? if roman_question_answered : Complete ?][? if not roman_question_answered : Negotiating ?]
+**Roman Question**: [? if roman_question_answered : Complete ?][? if not roman_question_answered : Negotiating ?]
 
 @interior
 
