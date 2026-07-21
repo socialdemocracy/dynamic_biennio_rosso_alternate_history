@@ -32,7 +32,7 @@ unavailable-subtitle: Not enough resources. (Need 1)
 subtitle: -1 resources
 on-arrival: resources -= 1; veterans_psi += 5*(1 - dissent);
 
-We have increased funding to <span style="color: [+ ppi_colour +];">**Unione Nazionale fra Militari Cattolici Mutilati, Invalidi e Reduci di Guerra**</span>, our veterans welfare organisation.
+We have increased funding to <span style="color: [+ ppi_colour +];">Unione Nazionale fra Militari Cattolici Mutilati, Invalidi e Reduci di Guerra</span>, our veterans welfare organisation.
 
 @culture
 choose-if: resources > 0
