@@ -331,7 +331,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = International Situations
 
-<span style="color: #dddddd;">**Ru**</span><span style="color: #0036A7;">**ssi**</span><span style="color: #D62718;">**ian**</span> **Civil War**: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="color: #750e0e;">**Soviet**</span> Victory ?]
+<span style="color: #dddddd;">**Ru**</span><span style="color: #0036A7;">**ssi**</span><span style="color: #D62718;">**an**</span> **Civil War**: [? if not rcw_over : Ongoing, Estimated [+ soviet_end_timer +] Months Remaining ?][? if rcw_over : <span style="color: #750e0e;">**Soviet**</span> Victory ?]
 
 **Fiume**: [? if not resolved_adriatic : <span style="color: #EBD97D;">Negotiating</span> ?][? if fiume_free : **Free City** ?][? if fiume_italian : <span style="color: #008C45;">**It**</span><span style="color: #E5E4E2;">**al**</span><span style="color: #CD212A;">**ian**</span> ?]
 
@@ -343,53 +343,53 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = Reforms
 
-**Work Councils**: [? if work_councils = 0 and councils_empowered = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if work_councils >= 1 and councils_empowered = 0: <span style="color: #66BB6A;">Influential</span> ?][? if councils_empowered = 1 : <span style="color: #66BB6A;">Empowered</span> ?].
+**Work Councils**: [? if work_councils = 0 and councils_empowered = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if work_councils >= 1 and councils_empowered = 0: <span style="color: #66BB6A;">Influential</span> ?][? if councils_empowered = 1 : <span style="color: #66BB6A;">Empowered</span> ?]
 
-[? if syndicalist_active : **Worker Syndicates**: [? if syndicate_progress = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if syndicate_progress = 1: <span style="color: #EBD97D;">Minor</span> ?][? if syndicate_progress = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if syndicate_progress = 3 or syndicate_progress = 4: <span style="color: #66BB6A;">Major</span> ?][? if syndicate_progress >= 5 : <span style="color: #66BB6A;">Majority-Established</span> ?] ?].
+[? if syndicalist_active : **Worker Syndicates**: [? if syndicate_progress = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if syndicate_progress = 1: <span style="color: #EBD97D;">Minor</span> ?][? if syndicate_progress = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if syndicate_progress = 3 or syndicate_progress = 4: <span style="color: #66BB6A;">Major</span> ?][? if syndicate_progress >= 5 : <span style="color: #66BB6A;">Majority-Established</span> ?] ?]
 
-**Economic Nationalisation**: [? if nationalisation_progress = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if nationalisation_progress = 1: <span style="color: #EBD97D;">Minor</span> ?][? if nationalisation_progress = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if nationalisation_progress = 3 or nationalisation_progress = 4: <span style="color: #66BB6A;">Major</span> ?][? if nationalisation_progress >= 5 : <span style="color: #66BB6A;">Majority-Seized</span> ?].
+**Economic Nationalisation**: [? if nationalisation_progress = 0: <span style="color: #d42f2f;">Non-existent</span> ?][? if nationalisation_progress = 1: <span style="color: #EBD97D;">Minor</span> ?][? if nationalisation_progress = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if nationalisation_progress = 3 or nationalisation_progress = 4: <span style="color: #66BB6A;">Major</span> ?][? if nationalisation_progress >= 5 : <span style="color: #66BB6A;">Majority-Seized</span> ?]
 
 = Education
 
-**Funding**: [? if education_funded = 0 : <span style="color: #d42f2f;">Decrepit</span> ?][? if education_funded = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if education_funded = 2 : <span style="color: #66BB6A;">Adequate</span> ?][? if education_funded = 3 : <span style="color: #66BB6A;">Generous</span> ?].
+**Funding**: [? if education_funded = 0 : <span style="color: #d42f2f;">Decrepit</span> ?][? if education_funded = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if education_funded = 2 : <span style="color: #66BB6A;">Adequate</span> ?][? if education_funded = 3 : <span style="color: #66BB6A;">Generous</span> ?]
 
-**Curriculum**: [? if education_reformed = 0 : <span style="color: #d42f2f;">Decrepit</span> ?][? if education_reformed = 1 : <span style="color: #EBD97D;">Traditional</span> ?][? if education_reformed = 2 : <span style="color: #66BB6A;">Standardised</span> ?][? if education_reformed >= 3 : <span style="color: #66BB6A;">Modernised</span> ?].
+**Curriculum**: [? if education_reformed = 0 : <span style="color: #d42f2f;">Decrepit</span> ?][? if education_reformed = 1 : <span style="color: #EBD97D;">Traditional</span> ?][? if education_reformed = 2 : <span style="color: #66BB6A;">Standardised</span> ?][? if education_reformed >= 3 : <span style="color: #66BB6A;">Modernised</span> ?]
 
-**Trade Schools**: [? if trade_school_funded = 0 : <span style="color: #d42f2f;">Unfunded</span> ?][? if trade_school_funded = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if trade_school_funded = 2 : <span style="color: #66BB6A;">Adequate</span> ?][? if trade_school_funded >= 3 : <span style="color: #66BB6A;">Numerous</span> ?].
+**Trade Schools**: [? if trade_school_funded = 0 : <span style="color: #d42f2f;">Unfunded</span> ?][? if trade_school_funded = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if trade_school_funded = 2 : <span style="color: #66BB6A;">Adequate</span> ?][? if trade_school_funded >= 3 : <span style="color: #66BB6A;">Numerous</span> ?]
 
 = Labour
 
-**Veterans Insurance Program**: [? if not unemployment_insurance_founded : <span style="color: #d42f2f;">Not yet founded</span> ?][? if unemployment_insurance_founded : [+ insurance_payments_veterans_timer +] Months left before renewal ?].
+**Veterans Insurance Program**: [? if not unemployment_insurance_founded : <span style="color: #d42f2f;">Not yet founded</span> ?][? if unemployment_insurance_founded : [+ insurance_payments_veterans_timer +] Months left before renewal ?]
 
-[? if unemployment_insurance_founded : **Workers Insurance Program**: [? if not unemployment_insurance_expanded : <span style="color: #EBD97D;">Not yet expanded</span> ?][? if unemployment_insurance_expanded : [+ insurance_payments_workers_timer +] Months left before renewal ?]. ?]
+[? if unemployment_insurance_founded : **Workers Insurance Program**: [? if not unemployment_insurance_expanded : <span style="color: #EBD97D;">Not yet expanded</span> ?][? if unemployment_insurance_expanded : [+ insurance_payments_workers_timer +] Months left before renewal ?] ?]
 
-**Working Hours**: [? if working_hours = 0 : <span style="color: #d42f2f;">Unlimited</span> ?][? if working_hours = 1 : <span style="color: #66BB6A;">80 Hour Work Week</span> ?][? if working_hours = 2 : <span style="color: #66BB6A;">60 Hour Work Week</span> ?][? if working_hours >= 3 : <span style="color: #66BB6A;">40 Hour Work Week</span> ?].
+**Working Hours**: [? if working_hours = 0 : <span style="color: #d42f2f;">Unlimited</span> ?][? if working_hours = 1 : <span style="color: #66BB6A;">80 Hour Work Week</span> ?][? if working_hours = 2 : <span style="color: #66BB6A;">60 Hour Work Week</span> ?][? if working_hours >= 3 : <span style="color: #66BB6A;">40 Hour Work Week</span> ?]
 
-**Workplace Safety**: [? if workers_safety = 0 : <span style="color: #d42f2f;">Dangerous</span> ?][? if workers_safety = 1 : <span style="color: #EBD97D;">Safe</span> ?][? if workers_safety >= 2 : <span style="color: #66BB6A;">Monitored</span> ?].
+**Workplace Safety**: [? if workers_safety = 0 : <span style="color: #d42f2f;">Dangerous</span> ?][? if workers_safety = 1 : <span style="color: #EBD97D;">Safe</span> ?][? if workers_safety >= 2 : <span style="color: #66BB6A;">Monitored</span> ?]
 
-**Minimum Wage**: [? if wage_increase = 0 : <span style="color: #d42f2f;">Non-existent</span> ?][? if wage_increase = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if wage_increase = 2 : <span style="color: #66BB6A;">Basic</span> ?][? if wage_increase >= 3 : <span style="color: #66BB6A;">Living</span> ?].
+**Minimum Wage**: [? if wage_increase = 0 : <span style="color: #d42f2f;">Non-existent</span> ?][? if wage_increase = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if wage_increase = 2 : <span style="color: #66BB6A;">Basic</span> ?][? if wage_increase >= 3 : <span style="color: #66BB6A;">Living</span> ?]
 
 = Judiciary
 
-**Judicial Reforms**: [? if judicial_reform <= 0 : <span style="color: #d42f2f;">Reactionary</span> ?][? if judicial_reform = 1: <span style="color: #EBD97D;">Corrupt</span> ?][? if judicial_reform >= 2: <span style="color: #66BB6A;">Reformed</span> ?].
+**Judicial Reforms**: [? if judicial_reform <= 0 : <span style="color: #d42f2f;">Reactionary</span> ?][? if judicial_reform = 1: <span style="color: #EBD97D;">Corrupt</span> ?][? if judicial_reform >= 2: <span style="color: #66BB6A;">Reformed</span> ?]
 
-[? if mussolini_jailed and not mussolini_convicted: Trial Date: [+ mussolini_trial_timer +] Months remaining ?].
+[? if mussolini_jailed and not mussolini_convicted: Trial Date: [+ mussolini_trial_timer +] Months remaining ?]
 
-[? if mussolini_jailed and not mussolini_convicted and judicial_reform < 2: **Evidence**: [? if evidence < 3 : <span style="color: #d42f2f;">Insufficient</span> ?][? if evidence >= 3 : <span style="color: #66BB6A;">Sufficient</span> ?]. ?]
+[? if mussolini_jailed and not mussolini_convicted and judicial_reform < 2: **Evidence**: [? if evidence < 3 : <span style="color: #d42f2f;">Insufficient</span> ?][? if evidence >= 3 : <span style="color: #66BB6A;">Sufficient</span> ?] ?]
 
-[? if mussolini_jailed and not mussolini_convicted and judicial_reform >= 2: **Evidence**: [? if evidence < 2 : <span style="color: #d42f2f;">Insufficient</span> ?][? if evidence >= 2 : <span style="color: #66BB6A;">Sufficient</span> ?]. ?]
+[? if mussolini_jailed and not mussolini_convicted and judicial_reform >= 2: **Evidence**: [? if evidence < 2 : <span style="color: #d42f2f;">Insufficient</span> ?][? if evidence >= 2 : <span style="color: #66BB6A;">Sufficient</span> ?] ?]
 
 = Women's Rights
 
-**Voting Rights**: [? if not womens_suffrage: <span style="color: #d42f2f;">Unable to vote</span> ?][? if womens_suffrage : <span style="color: #66BB6A;">Able to vote</span> ?].
+**Voting Rights**: [? if not womens_suffrage: <span style="color: #d42f2f;">Unable to vote</span>. ?][? if womens_suffrage : <span style="color: #66BB6A;">Able to vote</span>. ?]
 
-**Women's Rights**: [? if womens_rights = 0 : <span style="color: #d42f2f;">Restrictive</span> ?][? if womens_rights = 1 : <span style="color: #d42f2f;">Regressive</span> ?][? if womens_rights = 2 : <span style="color: #EBD97D;">Conservative</span> ?][? if womens_rights >= 3 : <span style="color: #66BB6A;">Fair</span> ?].
+**Women's Rights**: [? if womens_rights = 0 : <span style="color: #d42f2f;">Restrictive</span> ?][? if womens_rights = 1 : <span style="color: #d42f2f;">Regressive</span> ?][? if womens_rights = 2 : <span style="color: #EBD97D;">Conservative</span> ?][? if womens_rights >= 3 : <span style="color: #66BB6A;">Fair</span> ?]
 
-**Workplace Status**: [? if womens_work = 0 : <span style="color: #d42f2f;">Discriminated</span> ?][? if womens_work = 1 : <span style="color: #d42f2f;">Regressive</span> ?][? if womens_work = 2 : <span style="color: #EBD97D;">Biased</span> ?][? if womens_work >= 3 : <span style="color: #66BB6A;">Fair</span> ?].
+**Workplace Status**: [? if womens_work = 0 : <span style="color: #d42f2f;">Discriminated</span> ?][? if womens_work = 1 : <span style="color: #d42f2f;">Regressive</span> ?][? if womens_work = 2 : <span style="color: #EBD97D;">Biased</span> ?][? if womens_work >= 3 : <span style="color: #66BB6A;">Fair</span> ?]
 
-**Legal Status**: [? if family_law = 0 : <span style="color: #d42f2f;">Patriarchal</span> ?][? if family_law = 1 : <span style="color: #EBD97D;">Biased</span> ?][? if family_law >= 2 : <span style="color: #66BB6A;">Progressive</span> ?].
+**Legal Status**: [? if family_law = 0 : <span style="color: #d42f2f;">Patriarchal</span> ?][? if family_law = 1 : <span style="color: #EBD97D;">Biased</span> ?][? if family_law >= 2 : <span style="color: #66BB6A;">Progressive</span> ?]
 
-**Abortion Rights**: [? if abortion_rights = 0 : <span style="color: #d42f2f;">Restrictive</span> ?][? if abortion_rights >= 1 : <span style="color: #66BB6A;">Liberalised</span> ?].
+**Abortion Rights**: [? if abortion_rights = 0 : <span style="color: #d42f2f;">Restrictive</span> ?][? if abortion_rights >= 1 : <span style="color: #66BB6A;">Liberalised</span> ?]
 
 = Taxation
 
@@ -401,20 +401,20 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 = Child Labour
 
-**Legality**: [? if child_labour_laws = 0: <span style="color: #d42f2f;">Legal</span> ?][? if child_labour_laws = 1: <span style="color: #66BB6A;">Heavily Restricted</span> ?].
+**Legality**: [? if child_labour_laws = 0: <span style="color: #d42f2f;">Legal</span> ?][? if child_labour_laws = 1: <span style="color: #66BB6A;">Heavily Restricted</span> ?]
 
-**Education Attendance**: [? if child_attendance = 0: <span style="color: #d42f2f;">Nonexistent</span> ?][? if child_attendance = 1: <span style="color: #d42f2f;">Poor</span> ?][? if child_attendance = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if child_attendance >= 3: <span style="color: #66BB6A;">High</span> ?].
+**Education Attendance**: [? if child_attendance = 0: <span style="color: #d42f2f;">Nonexistent</span> ?][? if child_attendance = 1: <span style="color: #d42f2f;">Poor</span> ?][? if child_attendance = 2: <span style="color: #EBD97D;">Moderate</span> ?][? if child_attendance >= 3: <span style="color: #66BB6A;">High</span> ?]
 
-**Workplace Safety**: [? if child_safety = 0 : <span style="color: #d42f2f;">Dangerous</span> ?][? if child_safety = 1 : <span style="color: #EBD97D;">Safe</span> ?][? if child_safety >= 2 : <span style="color: #66BB6A;">Monitored</span> ?].
+**Workplace Safety**: [? if child_safety = 0 : <span style="color: #d42f2f;">Dangerous</span> ?][? if child_safety = 1 : <span style="color: #EBD97D;">Safe</span> ?][? if child_safety >= 2 : <span style="color: #66BB6A;">Monitored</span> ?]
 
 = Mezzogiorno 
 
-**Southern Question**: [? if not southern_resolved : <span style="color: #EBD97D;">Ongoing</span> ?][? if southern_resolved : <span style="color: #66BB6A;">Ameliorated</span> ?].
+**Southern Question**: [? if not southern_resolved : <span style="color: #EBD97D;">Ongoing</span> ?][? if southern_resolved : <span style="color: #66BB6A;">Ameliorated</span> ?]
 
-**Land Reform**: [? if southern_land_reformed = 0 : <span style="color: #d42f2f;">Unreformed</span> ?][? if southern_land_reformed = 1 : <span style="color: #66BB6A;">Ongoing</span> ?].
+**Land Reform**: [? if southern_land_reformed = 0 : <span style="color: #d42f2f;">Unreformed</span> ?][? if southern_land_reformed = 1 : <span style="color: #66BB6A;">Ongoing</span> ?]
 
-**Infrastructure**: [? if southern_infrastructure_funded < 1 : <span style="color: #d42f2f;">Poor</span> ?][? if southern_infrastructure_funded > 0 and southern_infrastructure_funded < 2 : <span style="color: #EBD97D;">Lackluster</span> ?][? if southern_infrastructure_funded > 1 : <span style="color: #66BB6A;">Recovering</span> ?].
+**Infrastructure**: [? if southern_infrastructure_funded < 1 : <span style="color: #d42f2f;">Poor</span> ?][? if southern_infrastructure_funded > 0 and southern_infrastructure_funded < 2 : <span style="color: #EBD97D;">Lackluster</span> ?][? if southern_infrastructure_funded > 1 : <span style="color: #66BB6A;">Recovering</span> ?]
 
-**Education**: [? if southern_education_funded < 1 : <span style="color: #d42f2f;">Poor</span> ?][? if southern_education_funded > 0 and southern_education_funded < 2 : <span style="color: #EBD97D;">Lackluster</span> ?][? if southern_education_funded > 1 : <span style="color: #66BB6A;">Recovering</span> ?].
+**Education**: [? if southern_education_funded < 1 : <span style="color: #d42f2f;">Poor</span> ?][? if southern_education_funded > 0 and southern_education_funded < 2 : <span style="color: #EBD97D;">Lackluster</span> ?][? if southern_education_funded > 1 : <span style="color: #66BB6A;">Recovering</span> ?]
 
-**Mafia**: [? if mafia_strength < 1 : <span style="color: #66BB6A;">Neutralised</span> ?][? if mafia_strength > 2: <span style="color: #d42f2f;">Strong</span> ?][? if mafia_strength = 1 : <span style="color: #EBD97D;">Drained</span> ?][? if mafia_strength = 2 : <span style="color: #EBD97D;">Weakened</span> ?].
+**Mafia**: [? if mafia_strength < 1 : <span style="color: #66BB6A;">Neutralised</span> ?][? if mafia_strength > 2: <span style="color: #d42f2f;">Strong</span> ?][? if mafia_strength = 1 : <span style="color: #EBD97D;">Drained</span> ?][? if mafia_strength = 2 : <span style="color: #EBD97D;">Weakened</span> ?]
