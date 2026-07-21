@@ -868,7 +868,3 @@ new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1919
-
-It is a dark time for the <span style="color: #008C45;">**Itali**</span><span style="color: #E5E4E2;">**an Kin**</span><span style="color: #CD212A;">**gdom**</span>. After the first world war, the economy is in crisis, with inflation uncontrollable and unemployment widespread. Our internal situation isn't much better, as <span style="color: [+ pnf_colour +];">nationalist</span> and <span style="color: [+ psi_colour +];">socialist</span> paramilitaries engage in effectively open warfare against each other whilst government inaction is criticised.
-
-Now, your task is to prepare for the next election. The <span style="color: [+ ul_colour +];">bourgeois</span>-<span style="color: [+ ldr_colour +];">right</span> government is unpopular, and with the new voting laws passed, we stand to gain. Perhaps the next government will have a <span style="color: [+ psi_colour +];">socialist</span> majority.
