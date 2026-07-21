@@ -215,7 +215,9 @@ max-cards: 4
 
 [? if year = 1919 and month = 2 and week = 1: After a 1 day siege of Kiev, <span style="color: #940000;">**Red Army**</span> forces capture the city and the government of <span style="color: #5BCEFA;">Ukra</span><span style="color: #FFD700;">ine</span> flees to the city of Zhytomyr, along with some troops from the Army of the <span style="color: #5BCEFA;">Ukrainian Peop</span><span style="color: #FFD700;">le's Republic</span>. ?]
 
-[? if year = 1919 and month = 2 and week = 3: Conflict erupts between the Republic of Poland and the Russian SFSR, beginning the *Soviet-Polish War*. ?]
+[? if year = 1919 and month = 2 and week = 3: A state of war starts between the <span style="color: #940000;">**Union of Soviet Socialist Republics**</span> and <span style="color: #dddddd;">**Pol**</span><span style="color: #DC143C;">**and**</span>, beginning with a skirmish at the Battle of Bereza Kartuska, with the <span style="color: #dddddd;">**Pol**</span><span style="color: #DC143C;">**ish**</span> Sejm declaring the need to liberate the northern provinces of <span style="color: #dddddd;">**Pol**</span><span style="color: #DC143C;">**and**</span>, including Vilnius, which is controlled by the <span style="color: #940000;">Red Army</span>. ?]
+
+[? if year = 1919 and month = 2 and week = 3: <span style="color: #D47B9B;">Kurt Eisner</span> is assasinated by <span style="color: #000000;">Germa</span><span style="color: #C00000;">n nation</span><span style="color: #dddddd;">alist</span> <span style="color: #7A3C00;">Anton Graf von Arco auf Valley</span> while on his way to the landtag of <span style="color: #dddddd;">Bava</span><span style="color: #0098D4;">ria</span>, where he reportedly was planning to announce his resignation.  <span style="color: #c00000;">Martin Segitz</span> has taken over as acting premier of <span style="color: #dddddd;">Bava</span><span style="color: #0098D4;">ria</span>. ?]
 
 [? if year = 1919 and month = 3 and week = 1: The Communist International is founded. ?]
 
