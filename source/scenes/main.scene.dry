@@ -13,12 +13,6 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-{!<div class="scrollable-box">!}
-
-[? if year = 1919 and month = 1 and week = 1: It is a dark time for the <span style="color: #008C45;">**Itali**</span><span style="color: #E5E4E2;">**an Kin**</span><span style="color: #CD212A;">**gdom**</span>. After the first world war, the economy is in crisis, with inflation uncontrollable and unemployment widespread. Our internal situation isn't much better, as <span style="color: [+ pnf_colour +];">nationalist</span> and <span style="color: [+ psi_colour +];">socialist</span> paramilitaries engage in effectively open warfare against each other whilst government inaction is criticised. ?]
-
-[? if year = 1919 and month = 1 and week = 1: Now, your task is to prepare for the next election. The <span style="color: [+ ul_colour +];">bourgeois</span>-<span style="color: [+ ldr_colour +];">right</span> government is unpopular, and with the new voting laws passed, we stand to gain. Perhaps the next government will have a <span style="color: [+ psi_colour +];">socialist</span> majority. ?]
-
 [? if year = 1919 and month = 1 and week = 2: After the dismissing of popular left wing police-chief, Emil Eichhorn, of the <span style="color: #c00000;">**SPD**</span>, after his refusal to use force on People's Naval Divisions and radicalized workers, the <span style="color: #700000;">*Spartacist Uprising*</span> begins and is crushed after the government headed by <span style="color: #c00000;">Friedrich Ebert</span> musters a paramilitary group known as the <span style="color: #808080;">**Freikorps**</span> to save the span style="color: #000000;">**Weim**</span><span style="color: #C00000;">**ar Repu**</span><span style="color: #D3C24D;">**blic**</span>. The leaders of the uprising, <span style="color: #700000;">Karl Liebknecht</span> and <span style="color: #D47B9B;">Rosa Luxemburg</span>, are summarily executed and thrown into the Landwehr River. ?]
 
 [? if year = 1919 and month = 2 and week = 1: Friedrich Erbert is elected as the First President of Germany. The Weimar Republic is founded. ?]
