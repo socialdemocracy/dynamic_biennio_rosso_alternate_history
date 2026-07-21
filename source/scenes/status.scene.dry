@@ -11,6 +11,7 @@ if (Q.economic_growth) {
 if (Q.unemployment) {
     Q.unemployment_2 = Q.unemployment.toFixed(1);
 }
+Q.revolutionary_fervour = Math.round(Q.revolutionary_fervour);
 !}
 
 = Status
