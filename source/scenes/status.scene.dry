@@ -419,3 +419,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 **Education**: [? if southern_education_funded < 1 : <span style="color: #d42f2f;">Poor</span> ?][? if southern_education_funded > 0 and southern_education_funded < 2 : <span style="color: #EBD97D;">Lackluster</span> ?][? if southern_education_funded > 1 : <span style="color: #66BB6A;">Recovering</span> ?]
 
 **Mafia**: [? if mafia_strength < 1 : <span style="color: #66BB6A;">Neutralised</span> ?][? if mafia_strength > 2: <span style="color: #d42f2f;">Strong</span> ?][? if mafia_strength = 1 : <span style="color: #EBD97D;">Drained</span> ?][? if mafia_strength = 2 : <span style="color: #EBD97D;">Weakened</span> ?]
+
+test
+
+<tip-wrap><img src="img/Arditi.png" width="400" height="200"><tip>Does this work? </tip></tip-wrap><br><br>
