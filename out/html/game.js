@@ -207,8 +207,16 @@
         if (searchString === 'PSI' ) {
             return baseTooltip.explanationText 
         }
+      
+        if (searchString === 'Others' ) {
+            return baseTooltip.explanationText 
+        }
+      
+        if (searchString === 'Other' ) {
+            return baseTooltip.explanationText 
+        }
 
-        if (searchString === 'Communist' ) {
+         if (searchString === 'Communist' ) {
             var strenghtText = getStrenghtText(Q.communist_strength);
             var dissentText = getDissentText(Q.communist_dissent);
             return baseTooltip.explanationText + '<br>Strength: ' + strenghtText + '<br>Dissent: ' + dissentText;
