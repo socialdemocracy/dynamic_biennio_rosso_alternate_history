@@ -155,23 +155,7 @@ const tooltipList = [{
     explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
     },
     {
-    searchString: "Italian Reformist Socialist Party",
-    explanationText: "<img src=img/PLDI.png>"
-    },
-    {
-    searchString: "Partito Socialista Riformista Italiano",
-    explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
-    },
-    {
     searchString: "PSI",
-    explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
-    },
-    {
-    searchString: "Italian Socialist Party",
-    explanationText: "<img src=img/psi2-Photoroom.png>"
-    },
-    {
-    searchString: "Partito Socialista Italiano",
     explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
     },
     {
