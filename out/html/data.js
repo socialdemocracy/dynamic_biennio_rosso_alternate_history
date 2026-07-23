@@ -204,11 +204,11 @@ const tooltipList = [{
     },
     {
     searchString: "PPI",
-    explanationText: "<img src=img/ppibetter.webp> Italian People's Party"
+    explanationText: "<img src=img/libertas2.png> Italian People's Party"
     },
     {
     searchString: "LDR",
-    explanationText: "<img src=img/wow2.jpg> Liberals, Democrats and Radicals"
+    explanationText: "<img src=img/PLDI.png> Liberals, Democrats and Radicals"
     },
     {
     searchString: "PLDI",
