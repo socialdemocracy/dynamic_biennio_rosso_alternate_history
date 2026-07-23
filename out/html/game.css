@@ -249,7 +249,7 @@ blockquote + blockquote.attribution {
 .tab_button.active {
     background-color: var(--content-bg-color);
 }
-/* tooltips from originalname/Dynamic Dev, improved by Comunist45*/
+/* tooltips from originalname/Dynamic Dev, edited by Communist45*/
 .mytooltip {
   position: relative;
   cursor: pointer;
@@ -262,14 +262,14 @@ blockquote + blockquote.attribution {
   position: fixed;
   z-index: 999999;
   width: 130px;
-  background: #fff4e6;
+  background: #d8ddef;
   color: #3b1f0a;
   text-align: left;
   border-radius: 8px;
   padding: 12px 14px;
   opacity: 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-  border: 1px solid #b22222;
+  border: 1px solid #2235b2;
   pointer-events: none;
   font-size: 14px !important;
   line-height: 1.5em !important;
@@ -286,6 +286,17 @@ blockquote + blockquote.attribution {
   top: calc(var(--mouse-y, 0px) - 20px);
   left: calc(var(--mouse-x, 0px));
   transform: translate(-50%, -100%);
+}
+
+body.dark-mode .mytooltip:hover {
+    background-color: rgb(60, 90, 160);
+}
+
+body.dark-mode .mytooltip .mytooltiptext {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    border: 1px solid #8093ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .tab_button:hover {
@@ -663,10 +674,6 @@ table {
   fill: #FF6961;
 }
 
-.tooltip-text {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
     z-index: 3;
     background: rgba(255, 255, 255, 0.9);
     border: 2px solid #555;
@@ -696,4 +703,9 @@ table {
     max-width: 540px;
     /* Prevent it from getting too wide */
   }
+}
+
+.tooltip-text {
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
