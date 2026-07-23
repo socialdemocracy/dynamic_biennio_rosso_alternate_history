@@ -378,7 +378,7 @@
         if (searchString === 'Carabinieri' && Q.interior_police_strength !== undefined) {
             var strength = Q.interior_police_strength ? Q.interior_police_strength : '0';
             var loyalty = getLoyaltyText(Q.interior_police_loyalty);
-            var readiness = getMilitancyText(Q.interior_police_militancy)
+            var militancy = getMilitancyText(Q.interior_police_militancy)
             return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + morale + '<br>Militancy: ' + readiness;
         }
 
