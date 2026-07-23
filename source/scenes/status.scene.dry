@@ -17,7 +17,7 @@ Q.revolutionary_fervour = Math.round(Q.revolutionary_fervour);
         if (seats && seats > 0) _newData.push({ id: id, legend: legend, name: legend, seats: seats });
     }
     _addP('psi', 'PSI', Q.psi_r);
-    _addP('pcdi', 'PCd'I', Q.pcdi_r);
+    _addP('pcdi', "PCd'I", Q.pcdi_r);
     _addP('psu', 'PSU', Q.psu_r);
     _addP('psri',  'PSRI',  Q.psri_r);
     _addP('pll', 'PLL', Q.pll_r);
