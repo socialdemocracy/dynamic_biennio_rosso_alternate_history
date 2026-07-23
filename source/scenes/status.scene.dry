@@ -360,7 +360,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 **Trade Schools**: [? if trade_school_funded = 0 : <span style="color: #d42f2f;">Unfunded</span> ?][? if trade_school_funded = 1 : <span style="color: #EBD97D;">Minimal</span> ?][? if trade_school_funded = 2 : <span style="color: #66BB6A;">Adequate</span> ?][? if trade_school_funded >= 3 : <span style="color: #66BB6A;">Numerous</span> ?]
 
-= Labour
+= Labor
 
 **Veterans Insurance Program**: [? if not unemployment_insurance_founded : <span style="color: #d42f2f;">Not yet founded</span> ?][? if unemployment_insurance_founded : [+ insurance_payments_veterans_timer +] Months left before renewal ?]
 
@@ -402,7 +402,7 @@ Catholics: <span style="color: [+ psi_colour +];">**[+ psi_name +]**</span>: [+ 
 
 **Tariffs**: [+ tariffs : taxation +]
 
-= Child Labour
+= Child Labor
 
 **Legality**: [? if child_labour_laws = 0: <span style="color: #d42f2f;">Legal</span> ?][? if child_labour_laws = 1: <span style="color: #66BB6A;">Heavily Restricted</span> ?]
 
