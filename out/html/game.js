@@ -203,32 +203,12 @@
             var relationText = getRelationshipText(Q.psri_relation) 
             return baseTooltip.explanationText + '<br>Relation: ' + relationText;
         }
-      
-      if (searchString === 'Italian Reformist Socialist Party' && Q.psri_relation !== undefined) {
-            var relationText = getRelationshipText(Q.psri_relation) 
-            return baseTooltip.explanationText + '<br>Relation: ' + relationText;
-        }
-      
-       if (searchString === 'Partito Socialista Riformista Italiano' && Q.psri_relation !== undefined) {
-            var relationText = getRelationshipText(Q.psri_relation) 
-            return baseTooltip.explanationText + '<br>Relation: ' + relationText;
-        }
-      
+
        if (searchString === 'PSI' ) {
             var internaldissentText = getInternalDissentText(Q.dissent_percent);
             return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
         }
-      
-       if (searchString === 'Italian Socialist Party' ) {
-            var internaldissentText = getInternalDissentText(Q.dissent_percent);
-            return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
-        }
-      
-       if (searchString === 'Partito Socialista Italiano' ) {
-            var internaldissentText = getInternalDissentText(Q.dissent_percent);
-            return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
-        }
-        
+
        if (searchString === 'Communist' ) {
             var strenghtText = getStrenghtText(Q.communist_strength);
             var dissentText = getDissentText(Q.communist_dissent);
