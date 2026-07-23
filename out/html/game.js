@@ -425,6 +425,25 @@
             });
         });
     }
+  }
+
+document.addEventListener('mousemove', e => {
+    document.querySelectorAll('.mytooltiptext').forEach(el => {
+        el.style.setProperty('--mouse-x', e.clientX + 'px');
+        el.style.setProperty('--mouse-y', e.clientY + 'px');
+    });
+});
+
+document.addEventListener('mouseover', e => {
+    const tooltip = e.target.closest('.mytooltip');
+    if (tooltip) {
+        const text = tooltip.querySelector('.mytooltiptext');
+        if (text) {
+            text.style.setProperty('--mouse-x', e.clientX + 'px');
+            text.style.setProperty('--mouse-y', e.clientY + 'px');
+        }
+    }
+});
 
   // populates the checkboxes in the options view
   window.populateOptions = function() {
