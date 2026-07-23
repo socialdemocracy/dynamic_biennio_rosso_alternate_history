@@ -7,6 +7,14 @@ const colourList = [{
         style: "color: #FFC0CB; font-weight: bold;"
    },
     {
+        word: "Others",
+        style: "color: #808080; font-weight: bold;"
+   },
+    {
+        word: "Other",
+        style: "color: #808080; font-weight: bold;"
+   },
+    {
         word: "Partito Socialista Riformista Italiano",
         style: "color: #FFC0CB; font-weight: bold;"
    },
@@ -185,6 +193,14 @@ const tooltipList = [{
     {
     searchString: "PSU",
     explanationText: "<img src=img/UnemploymentGov.jpg> Unitary Socialist Party"
+    },
+    {
+    searchString: "Others",
+    explanationText: "<img src=img/standin.jpg> Several smaller parties in the Italian political landscape."
+    },
+    {
+    searchString: "Other",
+    explanationText: "<img src=img/standin.jpg> Several smaller parties in the Italian political landscape."
     },
     {
     searchString: "PLL",
