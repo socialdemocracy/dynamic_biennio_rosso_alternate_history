@@ -365,21 +365,21 @@
             var strength = Q.army_strength ? Q.army_strength : '0';
             var loyalty = getLoyaltyText(Q.army_loyalty);
             var militancy = getMilitancyText(Q.army_militancy)
-            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + morale + '<br>Militancy:' + readiness;
+            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + loyalty + '<br>Militancy:' + militancy;
         }
 
         if (searchString === 'Esercito Italiano' && Q.army_strength !== undefined) {
             var strength = Q.army_strength ? Q.army_strength : '0';
             var loyalty = getLoyaltyText(Q.army_loyalty);
             var militancy = getMilitancyText(Q.army_militancy)
-            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + morale + '<br>Militancy:' + readiness;
+            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + loyalty + '<br>Militancy:' + militancy;
         }
 
         if (searchString === 'Carabinieri' && Q.interior_police_strength !== undefined) {
             var strength = Q.interior_police_strength ? Q.interior_police_strength : '0';
             var loyalty = getLoyaltyText(Q.interior_police_loyalty);
             var militancy = getMilitancyText(Q.interior_police_militancy)
-            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + morale + '<br>Militancy: ' + readiness;
+            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + loyalty + '<br>Militancy: ' + militancy;
         }
 
     return baseTooltip.explanationText;
