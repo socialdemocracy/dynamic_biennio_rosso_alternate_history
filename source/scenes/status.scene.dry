@@ -12,37 +12,6 @@ if (Q.unemployment) {
     Q.unemployment_2 = Q.unemployment.toFixed(1);
 }
 Q.revolutionary_fervour = Math.round(Q.revolutionary_fervour);
-    var _newData = [];
-    function _addP(id, legend, seats) {
-        if (seats && seats > 0) _newData.push({ id: id, legend: legend, name: legend, seats: seats });
-    }
-_addP('psi', 'PSI', Math.round(Q.psi_seating || 0));
-_addP('pcdi', "PCd'I", Math.round(Q.pcdi_seating || 0));
-_addP('psu', 'PSU', Math.round(Q.psu_seating || 0));
-_addP('psri', 'PSRI', Math.round(Q.psri_seating || 0));
-_addP('pll', 'PLL', Math.round(Q.pll_seating || 0));
-_addP('pri', 'PRI', Math.round(Q.pri_seating || 0));
-_addP('ds', 'PDSI', Math.round(Q.ds_seating || 0));
-_addP('ppi', 'PPI', Math.round(Q.ppi_seating || 0));
-_addP('ldr', 'LDR', Math.round(Q.ldr_seating || 0));
-_addP('pldi','PLDI', Math.round(Q.pldi_seating || 0));
-_addP('ul', 'UL', Math.round(Q.ul_seating || 0));
-_addP('pli','PLI', Math.round(Q.pli_seating || 0));
-_addP('pcs', 'PCS', Math.round(Q.pcs_seating || 0));
-_addP('pnf', 'FdC', Math.round(Q.pnf_seating || 0));
-_addP('pnf', 'PNF', Math.round(Q.pnf_seating || 0));
-_addP('bn', 'BN', Math.round(Q.bn_seating || 0));
-_addP('other', 'Others', Math.round(Q.other_seating || 0));
- 
-    var _newSig = JSON.stringify(_newData.map(function(p){ return p.id + p.seats; }));
-    var _changed = (_newSig !== window._parliSig);
-    window._parliData = _newData;
-    if (_changed) {
-        window._parliSig = _newSig;
-        window._parliAnimate = true;
-    } else {
-        window._parliAnimate = false;
-    }
 !}
 
 = Status
@@ -80,25 +49,8 @@ Prime Minister: [? if prime_minister_party == "PSI": <span style="color: [+ psi_
 
 Senate: [? if veto_removed == 0: Empowered ?][? if veto_removed == 1: Weakened ?]
 
-Chamber Of Deputies composition:
+Chamber of Deputies composition:
 
-{!<svg id="status_parliament" style="width: 100%; height: 220px; display: block;"></svg>
-<script>
-(function() {
-    if (!d3 || !d3.parliament || !window._parliData || window._parliData.length === 0) return;
-    var el = document.getElementById('status_parliament');
-    if (!el) return;
-    var w = el.parentElement.offsetWidth || 220;
-    el.setAttribute('width', w);
-    el.setAttribute('height', Math.round(w * 0.55));
-    var parl = d3.parliament();
-    parl.width(w).height(Math.round(w * 0.55)).innerRadiusCoef(0.4);
-    var animate = window._parliAnimate;
-    parl.enter.fromCenter(animate).smallToBig(animate);
-    parl.exit.toCenter(animate).bigToSmall(animate);
-    d3.select('#status_parliament').datum(window._parliData).call(parl);
-})();
-</script>!}
 [+ psi_name +]: [+ psi_seating_disp +]% 
 [? if pcdi_formed : PCd'I: [+ pcdi_seating_disp +]% ?]
 [? if psu_formed : PSU: [+ psu_seating_disp +]% ?]
