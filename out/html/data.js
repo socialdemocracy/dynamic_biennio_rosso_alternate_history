@@ -155,23 +155,7 @@ const tooltipList = [{
     explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
     },
     {
-    searchString: "Italian Reformist Socialist Party",
-    explanationText: "<img src=img/PLDI.png>"
-    },
-    {
-    searchString: "Partito Socialista Riformista Italiano",
-    explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
-    },
-    {
     searchString: "PSI",
-    explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
-    },
-    {
-    searchString: "Italian Socialist Party",
-    explanationText: "<img src=img/psi2-Photoroom.png>"
-    },
-    {
-    searchString: "Partito Socialista Italiano",
     explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
     },
     {
@@ -220,7 +204,7 @@ const tooltipList = [{
     },
     {
     searchString: "PPI",
-    explanationText: "<img src=img/libertas.jpg> Italian People's Party"
+    explanationText: "<img src=img/ppibetter.webp> Italian People's Party"
     },
     {
     searchString: "LDR",
@@ -236,19 +220,19 @@ const tooltipList = [{
     },
     {
     searchString: "UL",
-    explanationText: "<img src=img/ShuffleCabinet.jpg> Liberal Union"
+    explanationText: "<img src=img/ul.webp> Liberal Union"
     },
     {
     searchString: "PCS",
-    explanationText: "<img src=img/uh oh.jpg> Christian Social Party"
+    explanationText: "<img src=img/libertas.jpg> Christian Social Party"
     },
     {
     searchString: "FdC",
-    explanationText: "<img src=img/benito.jpg> Italian Fasces of Combat"
+    explanationText: "<img src=img/fdc.webp> Italian Fasces of Combat"
     },
     {
     searchString: "PNF",
-    explanationText: "<img src=img/benito.jpg> National Fascist Party"
+    explanationText: "<img src=img/pnf.webp> National Fascist Party"
     },
     {
     searchString: "Vittorio Emanuele III",
