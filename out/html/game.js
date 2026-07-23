@@ -467,13 +467,6 @@
         });
     }
 
-document.addEventListener('mousemove', e => {
-    document.querySelectorAll('.mytooltiptext').forEach(el => {
-        el.style.setProperty('--mouse-x', e.clientX + 'px');
-        el.style.setProperty('--mouse-y', e.clientY + 'px');
-    }
-});
-
   // populates the checkboxes in the options view
   window.populateOptions = function() {
     var disable_bg = window.dendryUI.disable_bg;
