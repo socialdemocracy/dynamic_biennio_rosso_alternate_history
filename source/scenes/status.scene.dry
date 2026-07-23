@@ -99,7 +99,6 @@ Chamber Of Deputies composition:
     d3.select('#status_parliament').datum(window._parliData).call(parl);
 })();
 </script>!}
-
 [+ psi_name +]: [+ psi_seating_disp +]% 
 [? if pcdi_formed : PCd'I: [+ pcdi_seating_disp +]% ?]
 [? if psu_formed : PSU: [+ psu_seating_disp +]% ?]
