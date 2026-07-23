@@ -9,6 +9,10 @@ d3.parliament = function() {
         height,
         innerRadiusCoef = 0.4;
 
+    // Allow overriding total seats or choosing by year
+    var totalSeats = null;
+    var year = null;
+
     /* animations */
     var enter = {
             "smallToBig": true,
@@ -44,7 +48,68 @@ d3.parliament = function() {
             /***
              * compute number of seats and rows of the parliament */
             var nSeats = 0;
-            d.forEach(function(p) { nSeats += (typeof p.seats === 'number') ? Math.floor(p.seats) : p.seats.length; });
+
+            // determine an effectiveTotalSeats: explicit totalSeats overrides year-derived value
+            var effectiveTotalSeats = (typeof totalSeats === 'number') ? Math.floor(totalSeats) : null;
+            if (effectiveTotalSeats === null && (typeof year === 'number')) {
+              // rule: years 1920 and later -> 535, before 1920 -> 508
+              effectiveTotalSeats = (year >= 1920) ? 535 : 508;
+            }
+
+            if (typeof effectiveTotalSeats === 'number') {
+              // allocate seats respecting explicit array seats (fixed) and treating numeric p.seats as weights
+              var fixedSeats = 0;
+              var weightedParties = [];
+              d.forEach(function(p) {
+                if (Array.isArray(p.seats)) {
+                  fixedSeats += p.seats.length;
+                } else {
+                  weightedParties.push(p);
+                }
+              });
+
+              var seatsToAllocate = Math.max(0, effectiveTotalSeats - fixedSeats);
+              if (seatsToAllocate <= 0 || weightedParties.length === 0) {
+                // nothing to allocate or no weighted parties — use only fixed seats
+                nSeats = fixedSeats;
+                weightedParties.forEach(function(p) { p._allocatedSeats = 0; });
+              } else {
+                // sum weights (treat numeric p.seats as weight)
+                var sumWeights = weightedParties.reduce(function(acc, p) { return acc + (typeof p.seats === 'number' ? p.seats : 0); }, 0);
+
+                if (sumWeights <= 0) {
+                  // equally distribute if weights invalid
+                  var base = Math.floor(seatsToAllocate / weightedParties.length);
+                  var rem = seatsToAllocate - base * weightedParties.length;
+                  weightedParties.forEach(function(p, i) { p._allocatedSeats = base + (i < rem ? 1 : 0); });
+                } else {
+                  // largest remainder (Hamilton) method
+                  var quotas = weightedParties.map(function(p) {
+                    var weight = (typeof p.seats === 'number') ? p.seats : 0;
+                    var exact = (weight / sumWeights) * seatsToAllocate;
+                    return { party: p, exact: exact, floor: Math.floor(exact), frac: exact - Math.floor(exact) };
+                  });
+                  var assigned = quotas.reduce(function(acc, q) { return acc + q.floor; }, 0);
+                  var remaining = seatsToAllocate - assigned;
+                  quotas.sort(function(a,b) { return b.frac - a.frac; });
+                  for (var i = 0; i < quotas.length; i++) {
+                    quotas[i].party._allocatedSeats = quotas[i].floor + (i < remaining ? 1 : 0);
+                  }
+                }
+
+                // convert allocated seats back into numeric p.seats for downstream code
+                weightedParties.forEach(function(p) {
+                  p.seats = (typeof p._allocatedSeats === 'number') ? p._allocatedSeats : 0;
+                  delete p._allocatedSeats;
+                });
+
+                nSeats = effectiveTotalSeats;
+              }
+            } else {
+              // fallback: original behavior (sum numbers and arrays)
+              d.forEach(function(p) { nSeats += (typeof p.seats === 'number') ? Math.floor(p.seats) : p.seats.length; });
+            }
+
 
             var nRows = 0;
             var maxSeatNumber = 0;
@@ -284,6 +349,13 @@ d3.parliament = function() {
         return parliament;
     };
 
+    // setter to explicitly override total seats (overrides year if present)
+    parliament.totalSeats = function(value) {
+      if (!arguments.length) return totalSeats;
+      totalSeats = (value === null ? null : +value);
+      return parliament;
+    };
+
     parliament.enter = {
         smallToBig: function (value) {
             if (!arguments.length) return enter.smallToBig;
@@ -316,6 +388,13 @@ d3.parliament = function() {
             exit.toCenter = value;
             return parliament.exit;
         }
+    };
+
+    // setter to select year-based default total seats (used if totalSeats not set)
+    parliament.year = function(value) {
+      if (!arguments.length) return year;
+      year = (value === null ? null : +value);
+      return parliament;
     };
 
     parliament.on = function(type, callback) {
