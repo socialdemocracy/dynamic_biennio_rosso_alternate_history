@@ -11,6 +11,38 @@ const colourList = [{
         style: "color: #808080; font-weight: bold;"
    },
     {
+        word: "Emil Eichhorn",
+        style: "color: #c00000; font-weight: bold;"
+   },
+    {
+        word: "SPD",
+        style: "color: #c00000; font-weight: bold;"
+   },
+    {
+        word: "Friedrich Ebert",
+        style: "color: #c00000; font-weight: bold;"
+   },
+    {
+        word: "Karl Liebknecht",
+        style: "color: #700000; font-weight: bold;"
+   },
+    {
+        word: "Rosa Luxemburg",
+        style: "color: #D47B9B; font-weight: bold;"
+   },
+    {
+        word: "Freikorps",
+        style: "color: #808080; font-weight: bold;"
+   },
+    {
+        word: "Landwehr River",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "League Of Nations",
+        style: "color: #0C418C; font-weight: bold;"
+   },
+    {
         word: "Other",
         style: "color: #808080; font-weight: bold;"
    },
@@ -167,6 +199,10 @@ const tooltipList = [{
     explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
     },
     {
+    searchString: "SPD",
+    explanationText: "<img src=img/spd-Photoroom.png> Sozialdemokratische Partei Deutschlands - Social Democratic Party Of Germany"
+    },
+    {
     searchString: "Communist",
     explanationText: "<img src=img/PreparingRevolution.jpg> The Communists are interested in radical, transformative policies and revolutionary action."
     },
@@ -259,8 +295,40 @@ const tooltipList = [{
     explanationText: "<img src=img/portraits/UmbertoII.jpg>"
     },
     {
+    searchString: "Emil Eichhorn",
+    explanationText: "<img src=img/portraits/eichhorn.jpeg>"
+    },
+    {
+    searchString: "Friedrich Ebert",
+    explanationText: "<img src=img/portraits/ebert.jpeg>"
+    },
+    {
+    searchString: "Karl Liebknecht",
+    explanationText: "<img src=img/portraits/liebknecht.jpeg>"
+    },
+    {
+    searchString: "Rosa Luxemburg",
+    explanationText: "<img src=img/portraits/luxemburg.jpeg>"
+    },
+    {
     searchString: "Red Guard",
     explanationText: "<img src=img/RedGuards.jpg> The Red Guards are a paramilitary socialist group asscoiated with the PSI."
+    },
+    {
+    searchString: "League Of Nations",
+    explanationText: "<img src=img/league_nation.webp> The League Of Nations is a international organization made to mediate disputes and keep world peace after the First World War."
+    },
+    {
+    searchString: "Landwehr River",
+    explanationText: "<img src=img/landwehr_river.jpeg> A river running parallel to the Spree River in Berlin, Germany."
+    },
+    {
+    searchString: "Weimar Republic",
+    explanationText: "<img src=img/ger_weim_rep.png> Deutsches Reich - German Republic"
+    },
+    {
+    searchString: "Freikorps",
+    explanationText: "<img src=img/freikorps.webp> A paramilitary made from conversative-nationalists in Germany."
     },
     {
     searchString: "Red Guards - PCd'I",
