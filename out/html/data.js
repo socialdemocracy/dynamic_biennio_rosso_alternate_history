@@ -196,11 +196,11 @@ const tooltipList = [{
     },
     {
     searchString: "Others",
-    explanationText: "<img src=img/standin.jpg> Several smaller parties in the Italian political landscape."
+    explanationText: "<img src=img/partismaller-Photoroom.png> Several smaller parties in the Italian political landscape."
     },
     {
     searchString: "Other",
-    explanationText: "<img src=img/standin.jpg> Several smaller parties in the Italian political landscape."
+    explanationText: "<img src=img/partismaller-Photoroom.png> Several smaller parties in the Italian political landscape."
     },
     {
     searchString: "PLL",
@@ -208,7 +208,7 @@ const tooltipList = [{
     },
     {
     searchString: "PRI",
-    explanationText: "<img src=img/pri.webp> Republican Party Of Italy"
+    explanationText: "<img src=img/pribetter.webp> Italian Republican Party"
     },
     {
     searchString: "DS",
@@ -224,7 +224,7 @@ const tooltipList = [{
     },
     {
     searchString: "LDR",
-    explanationText: "<img src=img/PLDI.png> Liberals, Democrats and Radicals"
+    explanationText: "<img src=img/ldr2.webp> Liberals, Democrats and Radicals"
     },
     {
     searchString: "PLDI",
