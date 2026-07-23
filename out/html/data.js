@@ -15,6 +15,10 @@ const colourList = [{
         style: "color: #c00000; font-weight: bold;"
    },
     {
+        word: "Weimar Republic",
+        style: "background: linear-gradient(90deg, #000000 33%, #c00000 34%, #D3C24D 33%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold;"
+   },
+    {
         word: "SPD",
         style: "color: #c00000; font-weight: bold;"
    },
