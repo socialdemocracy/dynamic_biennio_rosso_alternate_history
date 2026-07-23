@@ -425,7 +425,6 @@
             });
         });
     }
-  }
 
 document.addEventListener('mousemove', e => {
     document.querySelectorAll('.mytooltiptext').forEach(el => {
