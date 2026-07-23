@@ -203,33 +203,12 @@
             var relationText = getRelationshipText(Q.psri_relation) 
             return baseTooltip.explanationText + '<br>Relation: ' + relationText;
         }
-      
-      if (searchString === 'Italian Reformist Socialist Party' && Q.psri_relation !== undefined) {
-            var relationText = getRelationshipText(Q.psri_relation) 
-            return baseTooltip.explanationText + '<br>Relation: ' + relationText;
+
+        if (searchString === 'PSI' ) {
+            return baseTooltip.explanationText 
         }
-      
-       if (searchString === 'Partito Socialista Riformista Italiano' && Q.psri_relation !== undefined) {
-            var relationText = getRelationshipText(Q.psri_relation) 
-            return baseTooltip.explanationText + '<br>Relation: ' + relationText;
-        }
-      
-       if (searchString === 'PSI' ) {
-            var dissentText = getDissentText(Q.dissent_percent);
-            return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
-        }
-      
-       if (searchString === 'Italian Socialist Party' ) {
-             var dissentText = getDissentText(Q.dissent_percent);
-            return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
-        }
-      
-       if (searchString === 'Partito Socialista Italiano' ) {
-            var dissentText = getDissentText(Q.dissent_percent);
-            return baseTooltip.explanationText + '<br>Internal Dissent: ' + internaldissentText;
-        }
-        
-       if (searchString === 'Communist' ) {
+
+        if (searchString === 'Communist' ) {
             var strenghtText = getStrenghtText(Q.communist_strength);
             var dissentText = getDissentText(Q.communist_dissent);
             return baseTooltip.explanationText + '<br>Strength: ' + strenghtText + '<br>Dissent: ' + dissentText;
@@ -391,9 +370,9 @@
 
         if (searchString === 'Esercito Italiano' && Q.army_strength !== undefined) {
             var strength = Q.army_strength ? Q.army_strength : '0';
-            var morale = getLoyaltyText(Q.army_morale);
-            var readiness = getMilitancyText(Q.army_readiness)
-            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Morale: ' + morale + '<br>Readiness:' + readiness;
+            var loyalty = getLoyaltyText(Q.army_loyalty);
+            var militancy = getMilitancyText(Q.army_militancy)
+            return baseTooltip.explanationText + '<br>Strength: ' + strength + 'k<br>Loyalty: ' + morale + '<br>Militancy:' + readiness;
         }
 
         if (searchString === 'Carabinieri' && Q.interior_police_strength !== undefined) {
