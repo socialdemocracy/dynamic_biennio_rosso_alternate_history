@@ -296,19 +296,19 @@ const tooltipList = [{
     },
     {
     searchString: "Emil Eichhorn",
-    explanationText: "<img src=img/portraits/eichhorn.jpeg>"
+    explanationText: "<img src=img/portraits/eichhorn.jpeg> A politician in the SPD."
     },
     {
     searchString: "Friedrich Ebert",
-    explanationText: "<img src=img/portraits/ebert.jpeg>"
+    explanationText: "<img src=img/portraits/ebert.jpeg> A politician in the SPD."
     },
     {
     searchString: "Karl Liebknecht",
-    explanationText: "<img src=img/portraits/liebknecht.jpeg>"
+    explanationText: "<img src=img/portraits/liebknecht.jpeg> One of the leaders of the Spartacus Uprising."
     },
     {
     searchString: "Rosa Luxemburg",
-    explanationText: "<img src=img/portraits/luxemburg.jpeg>"
+    explanationText: "<img src=img/portraits/luxemburg.jpeg> One of the leaders of the Spartacus Uprising."
     },
     {
     searchString: "Red Guard",
