@@ -128,6 +128,47 @@
   window.displayText = function (text) {
         return applyWholesome(text);
     };
+     function applyWholesome(str) {
+        const allWords = new Set([
+            ...tooltipList.map(t => t.searchString),
+            ...colourList.map(c => c.word)
+        ]);
+    
+        // Escape special regex characters in the words
+        const escapedWords = [...allWords].map(word => 
+            word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        );
+
+        //fix for longer words not showing up if they contained smaller entry words inside of them
+        escapedWords.sort((a, b) => b.length - a.length);
+        
+        const regex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'g');
+    
+        return str.replace(/(<(?:span|strong)[^>]*>.*?<\/(?:span|strong)>|<[^>]+>|[^<]+)/g, (segment) => {
+            if (segment.startsWith('<')) return segment;
+    
+            return segment.replace(regex, (match) => {
+                const tooltip = tooltipList.find(t => t.searchString === match);
+                const colour = colourList.find(c => c.word === match);
+    
+                let style = colour ? colour.style : '';
+                let innerText = match;
+    
+                if (colour && colour.img) {
+                    innerText = `<img src="${colour.img}" class="p_icon" alt="">${innerText}`;
+                }
+    
+                if (tooltip) {
+                    var tooltipContent = getDynamicTooltipContent(match, tooltip);
+                    return `<span class='mytooltip' style='${style}'>${innerText}<span class='mytooltiptext'>${tooltipContent}</span></span>`;
+                } else if (colour) {
+                    return `<span style='${style}'>${innerText}</span>`;
+                }
+              
+                return match;
+            });
+        });
+    }
   
     //To get a value 
     function getRelationshipText(value) {
@@ -430,17 +471,6 @@ document.addEventListener('mousemove', e => {
     document.querySelectorAll('.mytooltiptext').forEach(el => {
         el.style.setProperty('--mouse-x', e.clientX + 'px');
         el.style.setProperty('--mouse-y', e.clientY + 'px');
-    });
-});
-
-document.addEventListener('mouseover', e => {
-    const tooltip = e.target.closest('.mytooltip');
-    if (tooltip) {
-        const text = tooltip.querySelector('.mytooltiptext');
-        if (text) {
-            text.style.setProperty('--mouse-x', e.clientX + 'px');
-            text.style.setProperty('--mouse-y', e.clientY + 'px');
-        }
     }
 });
 
