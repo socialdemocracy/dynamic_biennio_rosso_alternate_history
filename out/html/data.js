@@ -3,6 +3,26 @@ const colourList = [{
         style: "color: #FFC0CB; font-weight: bold;"
    },
     {
+        word: "Italian Reformist Socialist Party",
+        style: "color: #FFC0CB; font-weight: bold;"
+   },
+    {
+        word: "Partito Socialista Riformista Italiano",
+        style: "color: #FFC0CB; font-weight: bold;"
+   },
+    {
+        word: "PSI",
+        style: "color: #ED2855; font-weight: bold;"
+   },
+    {
+        word: "Italian Socialist Party",
+        style: "color: #ED2855; font-weight: bold;"
+   },
+    {
+        word: "Partito Socialista Italiano",
+        style: "color: #ED2855; font-weight: bold;"
+   },
+    {
         word: "Communist",
         style: "color: #8B0000; font-weight: bold;"
    },
@@ -133,6 +153,26 @@ const colourList = [{
 const tooltipList = [{
     searchString: "PSRI",
     explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
+    },
+    {
+    searchString: "Italian Reformist Socialist Party",
+    explanationText: "<img src=img/PLDI.png>"
+    },
+    {
+    searchString: "Partito Socialista Riformista Italiano",
+    explanationText: "<img src=img/PLDI.png> Italian Reformist Socialist Party"
+    },
+    {
+    searchString: "PSI",
+    explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
+    },
+    {
+    searchString: "Italian Socialist Party",
+    explanationText: "<img src=img/psi2-Photoroom.png>"
+    },
+    {
+    searchString: "Partito Socialista Italiano",
+    explanationText: "<img src=img/psi2-Photoroom.png> Italian Socialist Party"
     },
     {
     searchString: "Communist",
