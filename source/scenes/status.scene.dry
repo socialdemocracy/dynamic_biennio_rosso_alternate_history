@@ -189,7 +189,9 @@ Q.foreign_invasion_display = Q.foreign_invasion_time - Q.time;
 
 = Streetfighting
 
+
 Streetfighting: [+ violent_prevalence : violence +]
+
 
 = Legality
 
@@ -199,7 +201,7 @@ Streetfighting: [+ violent_prevalence : violence +]
 
 [? if not national_congress_seen : <span style="color: #240606;">**Anti-Bolshevik Leagues**</span>: [? if not abl_banned : <span style="color: #d42f2f;">Operating</span>?][? if abl_banned : <span style="color: #66BB6A;">Banned</span>?][? if abl_adp_active or abl_rg_active :, <span style="color: #EBD97D;">*Under Attack*</span> ?] ?]
 
-[? if not national_congress_seen : <span style="color: #693232;">**Red Guards**</span>: [? if not rg_banned : <span style="color: #66BB6A;">Operating</span> ?][? if rg_banned : <span style="color: #d42f2f;">Banned</span> ?] ?]
+[? if not national_congress_seen : <span style="color: #693232;">**Red Guard**</span>: [? if not rg_banned : <span style="color: #66BB6A;">Operating</span> ?][? if rg_banned : <span style="color: #d42f2f;">Banned</span> ?] ?]
 
 [? if arditi_formed : <span style="color: #dddddd;">**Arditi del Popolo**</span>: <span style="color: #66BB6A;">Operating</span> ?]
 
