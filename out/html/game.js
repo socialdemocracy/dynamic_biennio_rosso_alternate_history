@@ -215,8 +215,44 @@
         if (searchString === 'Other' ) {
             return baseTooltip.explanationText 
         }
+      
+       if (searchString === 'Emil Eichhorn' ) {
+            return baseTooltip.explanationText 
+        }
+            
+       if (searchString === 'SPD' ) {
+            return baseTooltip.explanationText 
+        }
+              
+       if (searchString === 'Friedrich Ebert' ) {
+            return baseTooltip.explanationText 
+        }
+              
+       if (searchString === 'Freikorps' ) {
+            return baseTooltip.explanationText 
+        }
+              
+       if (searchString === 'Weimar Republic' ) {
+            return baseTooltip.explanationText 
+        }
+              
+       if (searchString === 'Karl Liebknecht' ) {
+            return baseTooltip.explanationText 
+        }
+                    
+       if (searchString === 'Rosa Luxemburg' ) {
+            return baseTooltip.explanationText 
+        }
+                          
+       if (searchString === 'Landwehr River' ) {
+            return baseTooltip.explanationText 
+        }
+                                
+       if (searchString === 'League Of Nations' ) {
+            return baseTooltip.explanationText 
+        }
 
-         if (searchString === 'Communist' ) {
+        if (searchString === 'Communist' ) {
             var strenghtText = getStrenghtText(Q.communist_strength);
             var dissentText = getDissentText(Q.communist_dissent);
             return baseTooltip.explanationText + '<br>Strength: ' + strenghtText + '<br>Dissent: ' + dissentText;
