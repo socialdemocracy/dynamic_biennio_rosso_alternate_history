@@ -119,11 +119,47 @@
         document.body.classList.remove('dark-mode');
         window.dendryUI.saveSettings();
   };
+  
   window.enableDarkMode = function() {
       window.dendryUI.dark_mode = true;
       document.body.classList.add('dark-mode');
       window.dendryUI.saveSettings();
   }
+  window.displayText = function (text) {
+        return applyWholesome(text);
+    };
+     function applyWholesome(str) {
+    const allWords = new Set([
+        ...tooltipList.map(t => t.searchString),
+        ...colourList.map(c => c.word)
+    ]);
+
+    const regex = new RegExp(`\\b(${[...allWords].join('|')})\\b`, 'g');
+
+    return str.replace(/(<(?:span|strong)[^>]*>.*?<\/(?:span|strong)>|<[^>]+>|[^<]+)/g, (segment) => {
+        if (segment.startsWith('<')) return segment;
+
+        return segment.replace(regex, (match) => {
+            const tooltip = tooltipList.find(t => t.searchString === match);
+            const colour = colourList.find(c => c.word === match);
+
+            let style = colour ? colour.style : '';
+            let innerText = match;
+
+            if (colour && colour.img) {
+                innerText = `<img src="${colour.img}" class="p_icon" alt="">${innerText}`;
+            }
+
+            if (tooltip) {
+                return `<span class='mytooltip' style='${style}'>${innerText}<span  class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
+            } else if (colour) {
+                return `<span style='${style}'>${innerText}</span>`;
+            }
+
+            return match;
+        });
+    });
+}
 
   // populates the checkboxes in the options view
   window.populateOptions = function() {
