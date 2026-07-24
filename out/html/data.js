@@ -332,27 +332,27 @@ const tooltipList = [{
     },
     {
     searchString: "Vittorio Emanuele III",
-    explanationText: "<img src=img/portraits/VitorioEmanuel.jpg>"
+    explanationText: "<img src=img/portraits/VitorioEmanuel.jpg> Vittorio Emanuele III"
     },
     {
     searchString: "Umberto II",
-    explanationText: "<img src=img/portraits/UmbertoII.jpg>"
+    explanationText: "<img src=img/portraits/UmbertoII.jpg> Umberto II"
     },
     {
     searchString: "Emil Eichhorn",
-    explanationText: "<img src=img/portraits/eichhorn.jpeg>"
+    explanationText: "<img src=img/portraits/eichhorn.jpeg> Emil Eichhorn"
     },
     {
     searchString: "Friedrich Ebert",
-    explanationText: "<img src=img/portraits/ebert.jpeg>"
+    explanationText: "<img src=img/portraits/ebert.jpeg> Friedrich Ebert"
     },
     {
     searchString: "Karl Liebknecht",
-    explanationText: "<img src=img/portraits/liebknecht.jpeg>"
+    explanationText: "<img src=img/portraits/liebknecht.jpeg> Karl Liebknecht"
     },
     {
     searchString: "Rosa Luxemburg",
-    explanationText: "<img src=img/portraits/luxemburg.jpeg>"
+    explanationText: "<img src=img/portraits/luxemburg.jpeg> Rosa Luxemburg"
     },
     {
     searchString: "Red Guard",
@@ -376,7 +376,43 @@ const tooltipList = [{
     },
     {
     searchString: "Kiev",
-    explanationText: "<img src=img/freikorps.webp> ."
+    explanationText: "<img src=img/kiev2.jpeg> The de-jure capital of Ukraine, currently occupied by Russia."
+    },
+    {
+    searchString: "Zhytomyr",
+    explanationText: "<img src=img/zhytomyr.jpeg> The de-facto capital of Ukraine."
+    },
+    {
+    searchString: "Red Army",
+    explanationText: "<img src=img/red.army.webp> The Soviet Army."
+    },
+    {
+    searchString: "Reichspräsident",
+    explanationText: "<img src=img/reichpresident.webp> Reich-president   President of the Reich"
+    },
+    {
+    searchString: "Ukraine",
+    explanationText: "<img src=img/ukraine2.webp> Ukrayins'ka Narodna Respublika   Ukrainian People's Republic"
+    },
+    {
+    searchString: "Ukrainian People's Republic",
+    explanationText: "<img src=img/ukraine2.webp> Ukrayins'ka Narodna Respublika   Ukrainian People's Republic"
+    },
+    {
+    searchString: "Ukrainian People's Army",
+    explanationText: "<img src=img/ukr_army.webp> Armiia Ukrainskoi Narodnoi Respubliky   Ukrainian People's Army"
+    },
+    {
+    searchString: "Matthias Erzberger",
+    explanationText: "<img src=img/portraits/erzberger.jpeg> Matthias Erzberger"
+    },
+    {
+    searchString: "Philipp Scheidemann",
+    explanationText: "<img src=img/portraits/scheidemann.jpeg> Philipp Scheidemann   The  man who declared the Weimar Republic."
+    },
+    {
+    searchString: "Arthur von Posadowsky-Wehner",
+    explanationText: "<img src=img/portraits/wehner.jpeg> Arthur von Posadowsky-Wehner"
     },
     {
     searchString: "Red Guards - PCd'I",
