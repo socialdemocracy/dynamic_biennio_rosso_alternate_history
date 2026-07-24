@@ -411,8 +411,8 @@ const tooltipList = [{
     explanationText: "<img src=img/portraits/scheidemann.jpeg> Philipp Scheidemann   The  man who declared the Weimar Republic."
     },
     {
-    searchString: "Arthur von Posadowsky-Wehner",
-    explanationText: "<img src=img/portraits/wehner.jpeg> Arthur von Posadowsky-Wehner"
+    searchString: "Arthur Graf von Posadowsky-Wehner",
+    explanationText: "<img src=img/portraits/wehner.jpeg> Arthur Graf von Posadowsky-Wehner"
     },
     {
     searchString: "Red Guards - PCd'I",
