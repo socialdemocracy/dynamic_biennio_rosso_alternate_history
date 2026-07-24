@@ -15,10 +15,6 @@ const colourList = [{
         style: "color: #c00000; font-weight: bold;"
    },
     {
-        word: "Weimar Republic",
-        style: "font-weight: bold; background: linear-gradient(90deg, #000000 33%, #c00000 33%, #D3C24D 33%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"
-   },
-    {
         word: "SPD",
         style: "color: #c00000; font-weight: bold;"
    },
@@ -40,6 +36,10 @@ const colourList = [{
    },
     {
         word: "Landwehr River",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Weimar Republic",
         style: "font-weight: bold;"
    },
     {
@@ -204,7 +204,7 @@ const tooltipList = [{
     },
     {
     searchString: "SPD",
-    explanationText: "<img src=img/spd-Photoroom.png> Sozialdemokratische Partei Deutschlands - Social Democratic Party Of Germany"
+    explanationText: "<img src=img/spd-Photoroom.png> Sozialdemokratische Partei Deutschlands   Social Democratic Party Of Germany"
     },
     {
     searchString: "Communist",
@@ -328,7 +328,7 @@ const tooltipList = [{
     },
     {
     searchString: "Weimar Republic",
-    explanationText: "<img src=img/ger_weim_rep.png> Deutsches Reich - German Republic"
+    explanationText: "<img src=img/ger_weim_rep.png> Deutsches Reich   German Republic"
     },
     {
     searchString: "Freikorps",
