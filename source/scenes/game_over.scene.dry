@@ -130,6 +130,7 @@ if (Q.soviet_hungary == 1 && Q.labour_government == 1 && Q.soviet_polish_victory
 
 = End
 
+[? if (prime_minister_party = pnf_name or prime_minister == "Mussolini" or prime_minister == "D'Annunzio" or prime_minister == "Grandi") and not kingdom_victory: <iframe src="https://en.wikipedia.org/wiki/Italian_war_crimes" height="800 " width="545" style=" margin-left: -20px; border: 1px solid #000; "></iframe> ?]
 
 @eg_menu
 
