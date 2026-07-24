@@ -16,7 +16,7 @@ const colourList = [{
    },
     {
         word: "Weimar Republic",
-        style: "background: linear-gradient(90deg, #000000 33%, #c00000 33%, #D3C24D 33%); font-weight: bold;"
+        style: "background: linear-gradient(90deg, #000000 33%, #c00000 33%, #D3C24D 1%); -webkit-background-clip: text; background-clip: text; font-weight: bold;"
    },
     {
         word: "SPD",
@@ -300,19 +300,19 @@ const tooltipList = [{
     },
     {
     searchString: "Emil Eichhorn",
-    explanationText: "<img src=img/portraits/eichhorn.jpeg> A politician in the SPD."
+    explanationText: "<img src=img/portraits/eichhorn.jpeg>"
     },
     {
     searchString: "Friedrich Ebert",
-    explanationText: "<img src=img/portraits/ebert.jpeg> A politician in the SPD."
+    explanationText: "<img src=img/portraits/ebert.jpeg>"
     },
     {
     searchString: "Karl Liebknecht",
-    explanationText: "<img src=img/portraits/liebknecht.jpeg> One of the leaders of the Spartacus Uprising."
+    explanationText: "<img src=img/portraits/liebknecht.jpeg>"
     },
     {
     searchString: "Rosa Luxemburg",
-    explanationText: "<img src=img/portraits/luxemburg.jpeg> One of the leaders of the Spartacus Uprising."
+    explanationText: "<img src=img/portraits/luxemburg.jpeg>"
     },
     {
     searchString: "Red Guard",
