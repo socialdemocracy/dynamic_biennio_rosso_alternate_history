@@ -258,6 +258,17 @@ blockquote + blockquote.attribution {
 }
 .mytooltip:hover { background-color: rgb(100, 140, 220); }
 
+/* Special handling for gradient text tooltips */
+.mytooltip[style*="background: linear-gradient"] {
+  background-color: transparent !important;
+}
+
+.mytooltip[style*="background: linear-gradient"]:hover {
+  background-color: rgb(100, 140, 220) !important;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+
 .mytooltip .mytooltiptext {
   position: fixed;
   z-index: 999999;
@@ -290,6 +301,10 @@ blockquote + blockquote.attribution {
 
 body.dark-mode .mytooltip:hover {
     background-color: rgb(60, 90, 160);
+}
+
+body.dark-mode .mytooltip[style*="background: linear-gradient"]:hover {
+    background-color: rgb(60, 90, 160) !important;
 }
 
 body.dark-mode .mytooltip .mytooltiptext {
