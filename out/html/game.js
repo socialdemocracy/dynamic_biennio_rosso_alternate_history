@@ -227,6 +227,38 @@
        if (searchString === 'Friedrich Ebert' ) {
             return baseTooltip.explanationText 
         }
+                    
+       if (searchString === 'Philipp Scheidemann' ) {
+            return baseTooltip.explanationText 
+        }
+                    
+       if (searchString === 'Matthias Erzberger' ) {
+            return baseTooltip.explanationText 
+        }
+                          
+       if (searchString === 'Arthur Graf von Posadowsky-Wehner' ) {
+            return baseTooltip.explanationText 
+        }
+                                
+       if (searchString === 'Ukraine' ) {
+            return baseTooltip.explanationText 
+        }
+                                      
+       if (searchString === "Ukrainian People's Republic" ) {
+            return baseTooltip.explanationText 
+        }
+                                            
+       if (searchString === "Ukrainian People's Army" ) {
+            return baseTooltip.explanationText 
+        }
+                                                  
+       if (searchString === 'Zhytomyr' ) {
+            return baseTooltip.explanationText 
+        }
+                                                        
+       if (searchString === 'Kiev' ) {
+            return baseTooltip.explanationText 
+        }
               
        if (searchString === 'Freikorps' ) {
             return baseTooltip.explanationText 
