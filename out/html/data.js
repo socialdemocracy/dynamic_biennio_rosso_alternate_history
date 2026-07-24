@@ -23,6 +23,22 @@ const colourList = [{
         style: "color: #c00000; font-weight: bold;"
    },
     {
+        word: "Philipp Scheidemann",
+        style: "color: #c00000; font-weight: bold;"
+   },
+    {
+        word: "Matthias Erzberger",
+        style: "color: #000000; font-weight: bold;"
+   },
+    {
+        word: "Arthur Graf von Posadowsky-Wehner",
+        style: "color: #4288B3; font-weight: bold;"
+   },
+    {
+        word: "Red Army",
+        style: "color: #940000; font-weight: bold;"
+   },
+    {
         word: "Karl Liebknecht",
         style: "color: #700000; font-weight: bold;"
    },
@@ -40,6 +56,30 @@ const colourList = [{
    },
     {
         word: "Weimar Republic",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Kiev",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Zhytomyr",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Reichspräsident",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Ukraine",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Ukrainian People's Republic",
+        style: "font-weight: bold;"
+   },
+    {
+        word: "Ukrainian People's Army",
         style: "font-weight: bold;"
    },
     {
@@ -333,6 +373,10 @@ const tooltipList = [{
     {
     searchString: "Freikorps",
     explanationText: "<img src=img/freikorps.webp> A paramilitary made from conversative-nationalists in Germany."
+    },
+    {
+    searchString: "Kiev",
+    explanationText: "<img src=img/freikorps.webp> ."
     },
     {
     searchString: "Red Guards - PCd'I",
